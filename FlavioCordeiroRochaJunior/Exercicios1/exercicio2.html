@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>Exercicio 2</title>
+    </head>
+
+    <body>
+        <h1>Criar Conta</h1>
+        <form action="http://www.atdsistemas.com.br/web/formulario/">
+        <fieldset>
+
+            <legend> Informações pessoais</legend>
+            <label>Primeiro Nome:</label>
+            <input id="nome"></input><br><br>
+            <label>Foto:</label>
+            <button id="foto">Escolher arquivo</button>
+            <label>Nenhum arquivo selecionado</label><br><br>
+            <label>Endereço:</label>
+            <input id="endereco"></input><br><br>
+
+            <label>Sexo</label><br>
+            <input type="radio" name="sexo" id="masculino">Masculino</input><br>
+            <input type="radio" name="sexo" id="Feminino">Feminino</input><br>
+            <input type="radio" name="sexo" id="naodefinido">Não definido</input><br><br>
+
+            <label>Nível de Formação Acadêmica Concluído</label>
+            <select  id="formacao">
+                <option >Nenhuma formação</option>
+            </select>
+            <br><br>
+            <label>Quem sou eu?</label><br>
+            <textarea style="width: 1000px;" id="descricao"></textarea>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Redes Sociais</legend>
+            <label>Twitter:</label>
+            <input id="twitter"></input><br><br>
+            <label>Instagram:</label>
+            <input id="instagram"></input><br><br>
+            <label>Facebook:</label>
+            <input id="facebook"></input>
+        </fieldset>
+
+        <fieldset>
+            <legend>Informações de Login</legend>
+            <label>Email:</label>
+            <input id="email"></input><br><br>
+            <label>Senha:</label>
+            <input type="password" id="senha"></input><br><br>
+            <input type="checkbox" id="lembrar">Lembrar-me</input>
+        </fieldset>
+        <br><br>
+        <button>Limpar Campos</button>
+        <button>Enviar</button>
+    </form>
+    </body>
+</html>
