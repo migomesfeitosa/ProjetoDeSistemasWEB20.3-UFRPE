@@ -9,6 +9,7 @@
     border-radius:.8rem;
     margin:-3.2rem auto 3.2rem;
     padding-top:6.4rem;
+    border: 1px solid rgba(0, 0, 0, .1);
 
     background: #ffffff;
 }
@@ -20,8 +21,7 @@
 }
 
 #container .header h1{
-    display: flex;
-    justify-content: center;
+    text-align: center;
     font-size: 3.6rem;
     font-weight: 500;
     font-family: 'Russo One', sans-serif;
@@ -73,25 +73,21 @@
 }
 
 #criar-conta .div-sexo {
-    padding-right: 4rem;
     margin-bottom: 1.6rem;
 
 }
 
+
 #criar-conta .input-radio label {
-    cursor: pointer;
     color: #3d3947;
 
 }
 
 
 #criar-conta .input-radio input{
-    margin: 0.8rem auto 0.8rem auto;
-    font: 1.2rem Archivo;
-    outline: 0;
-    height: 1.5rem;
-    width: 1.5rem;
-    border-radius: 50%;
+    margin: 0.8rem 0.4rem 0.8rem auto;
+    height: 1.2rem;
+    width: 1.2rem;
     cursor: pointer;
 
 }
