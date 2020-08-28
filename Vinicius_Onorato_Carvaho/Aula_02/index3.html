@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/partials/header.css">
+    <link rel="stylesheet" href="/styles/forms.css">
+    <link rel="stylesheet" href="/styles/page-give-classes.css">
+   
+
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <title>Meu Formulário</title>
+</head>
+<body id="page-give-classes">
+
+    <div id="container">
+        <header class="page-header">
+            <div class="top-bar-container">
+                <a href="/index.html">
+                <img src="/images/icons/back.svg" alt="voltar">
+                </a>
+                <p>
+                    Vinny
+                </p>
+                <!-- <img src="/images/vinny.png" alt=""> -->
+            </div>
+
+            <div class="header-content">
+                <strong>Esse é o Vinny te Cadastra!</strong>
+                <p>Você preenche seus dados e eu fico com eles rsrs.... </p>
+                
+            </div>
+        </header>
+
+        <main>
+            <form id="create-classe" action="http://www.atdsistemas.com.br/web/formulario/" method="POST" enctype="multipart/form-data">                <fieldset>
+                    <legend>Seus dados</legend>
+
+                    <div class='input-block'>
+                        <label for="nome">Nome completo</label>
+                        <input name="nome" id="nome" required>
+                    </div>
+                   
+                    <div class="input-block">
+                        <label for="endereco">Endereço:</label>
+                        <input type="text" name="endereco" required>
+                    </div>
+                    <br>
+
+                    <div>
+                        <label for="sexo">Sexo:</label><br>
+                          <input type="radio" name="sexo" value="masculino" id="masc">&nbspMascunino <br>
+                          <input type="radio" name="sexo" value="feminino" id="fem">&nbspFeminino <br>
+                          <input type="radio" name="sexo" value="Nao definido" id="nao_def">&nbspNão Definido<br>
+                    </div>
+                    <br>
+                    <div class="select-block">
+                        <label for="formacao"> Nivel de Formação Acadêmica Concluido</label>
+                        <select name="formacao">
+                            <option value="Nao definido">Nao definido</option>
+                            <option value="Ensino Medio">Ensino Medio</option>
+                            <option value="Ensino Superior">Ensino Superior</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div class="textarea-block">
+                        <label for="bio">Biografia</label>
+                        <textarea name="bio" id="bio" required></textarea>
+                    </div>
+                    <div>
+                    <br>
+                        <label for="foto">Foto:</label>
+                        <input type="file" name="foto" required>
+                    </div>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Redes Sociais</legend>
+                    <div class="input-block">
+                        <label for="twitter">Twitter: <strong>(Inicie com https://)</strong></label>
+                        <input type="url" name="twitter" required>     
+                    </div>
+                    <div class="input-block">
+                        <label for="instagram">Instagram: <strong>(Inicie com https://)</strong></label>
+                        <input type="url" name="instagram" required>
+                    </div>
+                    <div class="input-block">
+                        <label for="facebook">Facebook:<strong>(Inicie com https://)</strong></label>
+                        <input type="text" name="facebook" required>
+                    </div>
+
+                </fieldset>
+                <fieldset>
+                    <legend>Informações de Login</legend>
+                    <div class="input-block">
+                        <label for="email">Email: <strong>(exemplo@dominio.com)</strong></label>
+                        <input type="email" name="email" required>
+                    </div>
+                    <div class="input-block">
+                        <label for="senha">Senha:</label>
+                        <input type="password" name="senha" required>
+
+                    </div>
+                    <br>
+                    <br>
+                    <input type="checkbox" name="lembrar">
+                    <label for="lembrar">Lembrar-me</label>
+                </fieldset>
+                <br>
+                <br>
+
+            </form>
+            <footer>
+                <p>
+                    <img src="/images/icons/warning.svg" alt="aviso-importante">
+                    Importante! <br>
+                    Preencha Todos os dados
+                    <button class="limpar" type="reset" form="create-classe"> Limpar dados</button>
+                </p>
+                <button type="submit" form="create-classe">Enviar dados</button>
+                
+            </footer>
+        </main>
+    </div>
+    
+</body>
+</html>
