@@ -12,11 +12,13 @@ body{
     background-size: cover;
     color: lightgray;
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
 }
 
 input, textarea{
     background-color: #2a272b;
     color: white;
+    font-size: 16px;
     border: 1px solid gray;
     height: 25px;
     outline: none;
@@ -24,6 +26,7 @@ input, textarea{
 
 textarea{
     columns: 110;
+    height: 50px;
 }
 
 h1{
@@ -74,3 +77,12 @@ button:hover:active{
 select{
     outline: none;
 }
+
+legend{
+    font-size: 20px;
+}
+
+label{
+    font-size: 17px;
+}
+
