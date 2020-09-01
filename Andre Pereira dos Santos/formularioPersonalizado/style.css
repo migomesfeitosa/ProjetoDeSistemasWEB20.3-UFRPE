@@ -1,0 +1,46 @@
+#formulario{
+background-color: rgb(209, 221, 245);
+text-align: left;
+position: relative;
+opacity: 0.7;
+
+}
+
+body{
+    background-image: url(https://movimentoecompanhia.com.br/wp-content/uploads/2016/03/fundo-movimento-e-companhia-formulario.jpg);
+    background-size: cover;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+	.botao {
+		background-color: cornflowerblue;
+		color:red !important;
+		border-radius: 30px;
+		font-size: .75em;
+		font-weight: 400;
+		height: 3.75em;
+		line-height: 3.85em;
+		letter-spacing: 2px;
+        padding: 0 4em;
+        position: relative;
+        left: 260px;
+		text-align: center;
+    }
+    h1{
+        color: white;
+      text-align-last: center;
+    }
+    
+    input[type="text"], input[type="url"],
+    input[type="password"], input[type="email"]{
+
+        background-color: rgb(224, 235, 165) ;
+    }
+    fieldset{
+        position: relative;
+        padding: 0 1em;
+        left: 7rem;
+        width: 700px;
+
+    }
