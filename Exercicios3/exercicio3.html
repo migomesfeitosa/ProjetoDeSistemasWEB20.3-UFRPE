@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>Exercicio 2</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body class="fundo">
+        <h1 class="titulo">Criar Conta</h1>
+        <form action="">
+        <fieldset class="caixa">
+
+            <legend class="fonte titulo-caixa"> Informações pessoais</legend>
+            <label class="fonte">Primeiro Nome:</label>
+            <input id="nome" class="textfield"></input><br><br>
+            <label class="fonte">Foto:</label>
+            <input id="foto" type="file" class="escolher-arquivo"><br><br>
+            
+            <label class="fonte">Endereço:</label>
+            <input id="endereco" class="textfield"></input><br><br>
+
+            <label class="fonte">Sexo</label><br>
+            <input type="radio" name="sexo" id="masculino" class=" checkbox"><label  class="fonte checkbox" for="masculino">Masculino</label><br>
+            <input type="radio" name="sexo" id="feminino" class=" checkbox"><label class="fonte checkbox" for="feminino">Feminino</label><br>
+            <input type="radio" name="sexo" id="naodefinido" class=" checkbox"><label class="fonte checkbox" for="naodefinido">Não definido</label><br><br>
+
+            <label class="fonte">Nível de Formação Acadêmica Concluído</label>
+            <select  id="formacao" class="combobox">
+                <option >Nenhuma formação</option>
+            </select>
+            <br><br>
+            <label class="fonte">Quem sou eu?</label><br>
+            <textarea style="width: 1000px;" class="textfield" id="descricao"></textarea>
+
+        </fieldset>
+        <br>
+        <fieldset class="caixa">
+            <legend class="fonte titulo-caixa">Redes Sociais</legend>
+            <label class="fonte">Twitter:</label>
+            <input id="twitter" class="textfield"></input><br><br>
+            <label class="fonte">Instagram:</label>
+            <input id="instagram" class="textfield"></input><br><br>
+            <label class="fonte">Facebook:</label>
+            <input id="facebook" class="textfield"></input>
+        </fieldset>
+        <br>
+        <fieldset class="caixa">
+            <legend class="fonte titulo-caixa">Informações de Login</legend>
+            <label class="fonte">Email:</label>
+            <input id="email" class="textfield"></input><br><br>
+            <label class="fonte">Senha:</label>
+            <input type="password" id="senha" class="textfield"></input><br><br>
+            <input type="checkbox" id="lembrar" class=" checkbox"><label for="lembrar" class="checkbox">Lembrar-me</label></input>
+        </fieldset>
+        <br><br>
+        <button class="button">Limpar Campos</button>
+        <button class="button">Enviar</button>
+    </form>
+    </body>
+</html>
