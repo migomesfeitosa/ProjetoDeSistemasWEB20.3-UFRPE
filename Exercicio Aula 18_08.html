@@ -1,0 +1,101 @@
+<!-- saved from url=(0052)file:///C:/Users/Migomes/.git/index.html?name=&name= -->
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="stilo.css" />
+</head>
+
+<title>Exercicio Aula 18_08</title>
+
+<body>
+
+    <form action="http://www.atdsistemas.com.br/web/formulario/" method="POST" enctype="multipart/form-data">
+
+        <div>
+
+            <h1>Criar Conta</h1>
+
+            <fieldset>
+                <legend>Informações Pessoais</legend>
+
+                <br>
+                <label for="nome">Primeiro Nome:</label>
+                <input type="text" name="nome">
+                <br><br>
+                <label for="foto">Foto:</label>
+                <input type="file" name="foto">
+                <br><br>
+                <label for="endereco">Endereço:</label>
+                <input type="text" name="endereco">
+                <br><br>
+
+                <label for="sexo">Sexo</label>
+                <br>
+                <input type="radio" name="sexo" value="masc">Masculino
+                <br>
+                <input type="radio" name="sexo" value="fem"> Feminino
+                <br>
+                <input type="radio" name="sexo" value="ndefinido"> Não definido
+                <br><br>
+
+                <label for="formacao">Nível de formação Acadêmica Concluído:</label>
+                <select name="formacao">
+                    <option value="nenhuma formacao">Nenhuma Formação</option>
+                    <option value="superior">Superior</option>
+                    <option value="medio">Medio</option>
+                    <option value="fundamental">Fundamental</option>
+                </select><br><br>
+
+                <label for="descricao">Quem sou eu?</label>
+                <br>
+                <textarea cols="70" rows="2" name="descricao" maxlength="250"></textarea>
+
+            </fieldset>
+            <br>
+
+            <fieldset>
+                <legend>Redes Sociais</legend>
+
+                <br>
+                <label for="twitter">Twitter:</label>
+                <input type="text" name="twitter">
+                <br><br>
+                <label for="Instagram">Instagram:</label>
+                <input type="text" name="instagram">
+                <br><br>
+                <label for="facebook">Facebook:</label>
+                <input type="text" name="facebook">
+                <br><br>
+
+            </fieldset>
+            <br>
+
+            <fieldset>
+                <legend>Informações de Login</legend>
+
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" name="email">
+                <br><br>
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha">
+                <br><br>
+
+                <input type="checkbox" name="lembrar">
+                <label for="lembrar">Lembrar-me</label>
+                <br>
+
+            </fieldset>
+
+            <input type="reset" value="Limpar Campos">
+            <input type="submit" value="Enviar">
+
+        </div>
+
+    </form>
+
+</body>
+
+</html>
