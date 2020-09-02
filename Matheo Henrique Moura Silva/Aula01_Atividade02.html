@@ -1,0 +1,90 @@
+<html>
+
+    <head>
+        
+        <title>Atividade da página 51</title>
+        <style>
+            #if1 {border: 1px solid black;
+            width: 800;
+            padding: 20px;
+            }
+            #if2 {border: 1px solid black;
+                width: 800;
+                padding: 20px;
+            }
+            #if3 {border: 1px solid black;
+                width: 800;
+                padding: 20px;
+            }
+            #if4 {border: 1px solid black;
+                width: 800;
+                padding: 20px;
+            }
+        </style>
+
+    </head>
+
+    <body>
+
+        <h1>Criar Conta</h1>
+
+        <form action="http://www.atdsistemas.com.br/web/formulario/" method="POST" enctype="multipart/form-data">
+        
+            <div id="if1">
+                <label for="nome">Primeiro Nome: <input type="text" name="nome" id="nome" placeholder="Digite seu nome..." required></label>
+                <p></p>
+                <label for="foto">Foto: <input type="file" required accept="image/*" name="foto" id="foto"></label>
+                <p></p>
+                <label for="endereco">Endereço: <input type="text" name="endereco" id="endereco" placeholder="Digite seu endereço..." required></label>
+                <p>Sexo:</p>
+                <label for="op1"><input type="radio" name="sexo" id="op1" >Masculino</label>
+                <br>
+                <label for="op2"><input type="radio" name="sexo" id="op2">Feminino</label>
+                <br>
+                <label for="op3"><input type="radio" name="sexo" id="op3">Não definido</label>
+                <p></p>
+                <div>
+                    <label for="">Nível de Formação Acadêmica Concluida:</label>
+                    <select name="formacao" required>
+                        <option selected="select" value="">Selecione +</option>
+                        <option value="0">Nenhuma Formação</option>
+                        <option value="1">Ensino Fundamental</option>
+                        <option value="2">Ensino Médio</option>
+                        <option value="3">Graduação</option>
+                        <option value="4">Pós Graduação</option>
+                        <option value="5">Mestrado</option>
+                        <option value="6">Doutorado</option>
+                    </select>
+                </div>
+                <div>
+                    <p>Quem sou eu?</p>
+                    <textarea name="descrição" id="biografia" cols="90" rows="1"></textarea>
+                </div>
+            </div>
+
+            <div id="if2">
+                <label for="twitter">Twitter: <input type="text" name="twitter" id="twitter" placeholder="Digite seu nome de usuario" required></label>
+                <p></p>
+                <label for="instagram">Instagram: <input type="text" name="instagram" id="instagram" placeholder="Digite seu nome de usuario" required></label>
+                <p></p>
+                <label for="facebook">Facebook: <input type="text" name="facebook" id="facebook" placeholder="Digite seu nome de usuario" required></label>
+            </div>
+            
+            <div id="if3">
+                <label for="email">Digite seu E-mail: <input type="email" name="email" id="email" required placeholder="Digite seu E-mail"></label>
+                <p></p>
+                <label for="senha">Digite sua senha: <input type="password" required placeholder="Digite sua senha" name="senha" id="senha"></label>
+                <p></p>
+                <label for="a"><input type="checkbox" name="lembrar" id="a" required checked> Lembrar-me</label>
+            </div>
+
+            <div id="if4">
+                <input type="reset" value="Limpar Campos">
+                <input type="submit" value="Enviar">
+            </div>
+        
+        </form>
+
+    </body>
+
+</html>
