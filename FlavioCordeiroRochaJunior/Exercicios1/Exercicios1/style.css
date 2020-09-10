@@ -1,0 +1,370 @@
+body{
+    background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/f9935b31-a32a-49c4-8149-59ba62895575/3dddeca3-02c5-47dc-8de7-19e7392a370a/BR-pt-20200824-popsignuptwoweeks-perspective_alpha_website_small.jpg");
+    width: 100%-500px;
+    height: 800px;
+    background-repeat: no-repeat;
+}
+.fundo{
+    position: relative;
+    top: -7px;
+    left: -8px;
+    
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 1117px;
+    width: 1519px;
+}
+
+.caixa_login{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 430px;
+    height: 690px;
+    left: 37%;
+    top: 100px;
+    
+}
+.titulo{
+    position: absolute;
+    left: 14%;
+    top: 50px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo{
+    position: absolute;
+    top: -15px;
+    left: 30px;
+}
+
+.textfield{
+    width: 300px;
+    height: 50px;
+    background-color: #333;
+    border-radius: 4px;
+    border: 0px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-indent: 18px;
+    color: white;
+}
+.login{
+    position: absolute;
+    top: 130px;
+    left: 14%;
+   
+    
+}
+.login:focus{
+    background-color: rgb(45, 45, 45);
+}
+
+.senha{
+    position: absolute;
+    top: 200px;
+    left: 14%;
+}
+
+.entrar{
+    position: absolute;
+    top: 300px;
+    left: 14%;
+    background-color: rgb(229,9,20);
+    width: 305px;
+    height: 50px;
+    border: 0px;
+    border-radius: 4px;
+    font-size: 16px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.lembre{
+    position: absolute;
+    top: 360px;
+    left: 13%;
+    width: 18px;
+    height: 18px;
+    border-radius: 10px;
+    color: #333;
+}
+.label-lembre{
+    position: absolute;
+    top: 365px;
+    left: 19%;
+    color: #b3b3b3;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+.lembre::after{
+    color: #b3b3b3;
+}
+
+.ajuda{
+    position: absolute;
+    top: 365px;
+    left: 61%;
+    color: #b3b3b3;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    text-decoration: none;
+}
+.ajuda:hover{
+    text-decoration: underline;
+}
+
+.logo-face{
+    position: absolute;
+    top: 430px;
+    left: 13%;
+    cursor: pointer;
+}
+.label-logo-face{
+    position: absolute;
+    top: 432px;
+    left: 21%;
+    color: #737373;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+}
+.label-novo{
+    position: absolute;
+    top: 465px;
+    left: 13%;
+    color: #737373;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.label-assine{
+    position: absolute;
+    top: 465px;
+    left: 39%;
+    color: white;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+.label-assine:hover{
+    text-decoration: underline;
+}
+.ponto{
+    position: absolute;
+    top: 465px;
+    left: 61%;
+    color: #737373;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.texto-capt{
+    position: absolute;
+    top: 500px;
+    left: 13%;
+    background-color: transparent;
+    width: 310px;
+    height: 100px;
+    color: #8c8c8c;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.texto-saiba{
+    color: #0071eb;
+    text-decoration: none;
+}
+.texto-saiba:hover{
+    text-decoration: underline;
+    
+}
+
+.rodape{
+    position: absolute;
+    top: 870px;
+    left: -2px;
+    width: 100%;
+    height: 247px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.duvidas{
+    position: absolute;
+    top: 30px;
+    left: 18%;
+    background-color: transparent;
+    width: 250px;
+    height: 100px;
+    color: #737373;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.telefone{
+    text-decoration: none;
+    color: #737373;
+}
+.telefone:hover{
+    text-decoration: underline;
+}
+.termos{
+    position: absolute;
+    top: 80px;
+    left: 18%;
+    background-color: transparent;
+    width: 750px;
+    height: 50px;
+
+}
+.termos1{
+    background-color: transparent;
+    width: 200px;
+    height: 50px;
+    
+}
+.termos2{
+    position: absolute;
+    top: 0px;
+    left: 42%;
+    background-color: transparent;
+    width: 150px;
+    height: 50px;
+    
+}
+.termos3{
+    position: absolute;
+    top: 0px;
+    left: 75%;
+    background-color: transparent;
+    width: 200px;
+    height: 50px;
+    
+}
+
+.link-termos{
+    text-decoration: none;
+    color: #737373;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.link-termos:hover{
+    text-decoration: underline;
+}
+
+.lan{
+    position: absolute;
+    top: 130px;
+    left: 18%;
+    width: 140px;
+    height: 48px;
+    border-color: white;
+    border-top-width: 0.5px;
+    border-bottom-width: 0.5px;
+    border-left-width: 0.5px;
+    border-right-width: 0.5px;
+    border-color:#737373;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #737373;
+    text-indent: 40px;
+
+}
+
+.icone-combo{
+    position: absolute;
+    top: 143px;
+    left: 18.7%;
+    
+
+}
+.itens-combo{
+    background-color: black;
+    color: #737373;
+    text-indent: 10px;
+}
+
+@media(max-width:576px){
+    body{
+        background-image: none;
+        background-color: black;
+    }
+    .logo{
+        top: -25px;
+        left: -5px ;
+        
+    }
+    .caixa_login{
+        top: 20px;
+        left: 0px;
+        width: 482px;
+        background-color: transparent;
+    }
+    .titulo{
+        left: 25px;
+    }
+    .login{
+        left: 25px;
+
+    }
+    .senha{
+        left: 25px;
+    }
+    .textfield{
+        width: 430px;
+    }
+    .entrar{
+        width: 435px;
+        left: 25px;
+    }
+
+    .lembre{
+        left: 20px;
+    }
+    .label-lembre{
+        left: 47px;
+    }
+    .ajuda{
+        left: 350px;
+    }
+    .logo-face{
+        left: 25px;
+    }
+    .label-logo-face{
+        left: 55px;
+    }
+    .label-novo{
+        left: 25px;
+    }
+    .label-assine{
+        left: 140px;
+    }
+    .texto-capt{
+        left: 25px;
+        width: 430px;
+    }
+    .rodape{
+        top: 710px;
+        height: 410px;
+        border-top: 1px solid #737373;
+        
+    }
+    .termos{
+        width: 280px;
+        height: 200px;
+        background-color: transparent;
+    }
+    .termos2{
+        top: 30px;
+        left: 1px;
+    }
+    .termos3{
+        top: 60px;
+        left: 1px;
+    }
+    .lan{
+        top: 200px;
+    }
+    .icone-combo{
+        left: 97px;
+        top: 213px;
+    }
+}

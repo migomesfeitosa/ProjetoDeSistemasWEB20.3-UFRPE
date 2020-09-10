@@ -1,0 +1,382 @@
+.corpo{
+    display: block;
+    width: 1511px;
+}
+
+.fundo-topo{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: #3D589B;
+    width: 100%;
+    height: 125px;
+    
+    
+    
+}
+
+.top-fundo{
+    width: 1511px;
+    height: 125px;
+}
+.logo{
+    position: absolute;
+    top: 30px;
+    left: 20px;
+}
+
+.login{
+    display: flex;
+    position: absolute;
+    top: 30px;
+    left: 60%;
+    width: 600px;
+    height: 100px;
+    background-color: transparent;
+}
+.login-area{
+    
+    background-color: transparent;
+    width: 200px;
+    height: 80px;
+    margin: 10px;
+}
+.login-area-botao{
+    width: 100px;
+    height: 50px;
+}
+
+.textfield{
+    width: 92%;
+    border:none;
+    height: 20px;
+    
+}
+.label{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    
+}
+
+.botao{
+    position: absolute;
+    top: 28px;
+    height: 25px;
+    width: 55px;
+    font-weight: bold;
+    background-color: #5C75A9;
+    color: white;
+    border: none;
+    box-shadow: 0px 0px 1px black;
+    cursor: pointer;
+}
+
+.esqueceu{
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.esqueceu:hover{
+    text-decoration: underline;
+}
+.label-baixo{
+    position: absolute;
+    top: 57px;
+    left: 230px;
+    color: #7493C1;
+
+}
+
+.label-titulo{
+    position: absolute;
+    top: 5px;
+}
+.checkbox{
+    position: absolute;
+    left: 5px;
+    top: 55px ;
+}
+.label-manter{
+    position: absolute;
+    left: 28px;
+    top: 57px;
+}
+
+.fundo{
+    background-image: linear-gradient(to bottom,#FDFDFC,#DADCEB);
+    width: 100%;
+    height: 655px;
+    display: flex;
+}
+
+.area-principal{
+    background-color: transparent;
+    width: 50%;
+    height: 600px;
+    margin-right: 10px;
+    
+}
+.separar-segundo{
+    margin-left: 50px;
+}
+
+.cadastro{
+    
+    flex-wrap: wrap;
+    background-color: transparent;
+    margin-left: 100px;
+    width: 73%;
+    height: 500px;
+}
+.campos1{
+    margin-bottom: 5px;
+    width: 250px;
+    height: 30px;
+    text-indent: 10px;
+    font-size: 16px;
+}
+.campos2{
+    margin-bottom: 5px;
+    width: 512px;
+    height: 30px;
+    text-indent: 10px;
+    font-size: 16px;
+}
+.data{
+    margin-left: 10px;
+    width: 94%;
+    background-color: transparent;
+    display: flex;
+}
+.data-style{
+    height: 40px;
+    width: 67px;
+    
+}
+.pq{
+    font-size: 14px;
+    width: 50px;
+    color: #3D589B;
+    background-color: transparent;
+}
+.caixa-pq{
+    margin-left: 10px;
+    width: 35%;
+    text-align: justify;
+}
+
+.sexo{
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.label-sexo{
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.termos{
+    background-color: transparent;
+    width: 72%;
+    height: 70px;
+    text-align: justify;
+    color: #757575;
+}
+
+.cadastre-se{
+    margin-top: 10px;
+    background-image: linear-gradient(to bottom,#8BB981,#5B8848);
+    color: white;
+    width: 40%;
+    height: 40px;
+    border:none;
+    box-shadow: 0px 0px 1px black;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+}
+.link-t{
+    text-decoration: none;
+}
+
+.cont{
+    margin-top: 0px;
+}
+.subtitulo{
+    width: 72%;
+    margin-left: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #233871;
+}
+.primeiro-plano{
+    background-color: transparent;
+}
+.aviso{
+    display: none;
+    visibility: hidden;       
+}
+.icone-celular{
+    display: none;
+    visibility: hidden;
+}
+.campos-mobile{
+    display: none;
+    visibility: hidden;
+}
+.languagem{
+    display: none;
+    visibility: hidden;
+}
+.rodape{
+    display: none;
+    visibility: hidden;
+}
+@media(max-width:576px){
+    .logo{
+        width: 120px;
+       position: absolute;
+       left: 40%;
+       top: 5px;
+
+    }
+    .fundo-topo{
+        height: 50px;
+    }
+    .login{
+        display: none;
+        visibility: hidden;
+    }
+    .primeiro-plano{
+        visibility: hidden;
+        display: none;
+    }
+    .separar-segundo{
+        visibility: hidden;
+        display: none;
+    }
+
+    .aviso{
+        display: flex;
+        visibility: visible;
+        margin-top: -60px;
+        margin-left: 20px;
+        background-color: #FFFBE2;
+        width: 430px;
+        height: 70px;
+        border-radius: 15px;
+        border: 2px solid #EDDC75; 
+        
+    }
+    .label-aviso{
+        
+        color: #596886 ;
+        width: 50px;
+        text-align: justify;
+        
+    }
+    .icone-celular{
+        display: initial;
+        visibility: visible;
+        margin-top: 12px;
+        margin-left: 10px;
+        width: 35px;
+        height: 45px;
+
+    }
+    .campos-mobile{
+        display: initial;
+        visibility: visible;
+        width: 424px;
+        height: 90px;
+        background-color: lawngreen;
+        margin-top: 50px;
+        margin-left: -425px;
+        border-radius: 5px;
+        
+    }
+    .campos-m{
+        width: 416px;
+        height: 40px;
+        border: 1px 1px 1px 1px;
+        
+    }
+    .botao-mobile{
+        margin-top: 10px;
+        width: 424px;
+        height: 40px;
+        color: white;
+        border-radius: 5px;
+        border: none;
+        background-image: linear-gradient(to bottom, #6078AB,#596F9D );
+        cursor: pointer;
+    }
+    .botao-criar-mobile{
+        width: 160px;
+        height: 40px;
+        margin-top: 50px;
+        margin-left: 130px;
+        border-radius: 5px;
+        border:none;
+        background-image: linear-gradient(to bottom, #5286E5,#5992FB);
+        color: white;
+        cursor: pointer;
+    }
+    .esqueci-senha{
+        position: absolute;
+        top: 430px;
+        left: 130px;
+        text-decoration: none;
+    }
+    .esqueci-senha:hover{
+        text-decoration: underline;
+    }
+    .help-mobile{
+        position: absolute;
+        top: 1px;
+        left: 135px;
+        width: 100px;
+        text-decoration: none;
+    }
+    .help-mobile:hover{
+        text-decoration: underline;
+    }
+    .languagem{
+        display: initial;
+        visibility:visible;
+        display: flex;
+        background-color: white;
+        width: 477px;
+        height: 285px;
+        margin-top: 370px;
+        margin-left: -453px;
+    }
+    .partes-lan{
+        display: block;
+        margin-top: 20px;
+        background-color: transparent;
+        width: 220px;
+        height: 100px;
+        margin-left: 10px;
+        text-align: center;
+    }
+    .lan-label{
+        text-decoration: none;
+       
+    }
+    .lan-label:hover{
+        text-decoration: underline;
+        
+    }
+    .rodape{
+        display: initial;
+        visibility:visible;
+        position: absolute;
+        top: 620px;
+        left: 200px;
+        color: #c2c2c2;
+    }
+
+}
