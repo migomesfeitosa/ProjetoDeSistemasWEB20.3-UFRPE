@@ -180,3 +180,8 @@ img{
     visibility: hidden;
     color: #3b5998
 }
+
+.form-cadastrar{
+    display: inline-block;
+    float: right;
+}
