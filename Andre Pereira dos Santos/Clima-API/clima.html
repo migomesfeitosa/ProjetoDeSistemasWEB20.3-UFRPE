@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Clima</title>
+	<link rel="stylesheet" href="estilo.css">
+	<script src="jquery-3.1.0.min.js"></script>
+
+</head>
+<body>
+
+<div id="pesquisa">
+	<label>Cidade :</label>
+	<input type="text" id="cidade">
+	
+	<input type="button" onclick="procurar()" value="Ver dados" id="botao"> 
+
+	</div>
+<br>
+<div id="fundo">
+	<div id="dados">
+		<br>
+		<label> Nuvens :</label>
+		<p>
+		<label> Humidade :</label>
+		<p>
+		<label> Vento :</label>
+		<p>
+		<label> Temperatura:</label>
+		<p>
+		<label> Temperatura Maxima :</label>
+		<p>
+		<label> Temperatura Minima :</label>
+	</div>
+		
+	<div id="result">
+		<input type="text" id ="nuv">
+		<br>
+		<input type="text" id ="humi">
+		<br>
+		<input type="text" id ="vent">
+		<br>
+		<input type="text" id ="temp">
+		<br>
+		<input type="text" id ="tmax">
+		<br>
+		<input type="text" id ="tmin">
+
+
+	</div>
+
+	
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
