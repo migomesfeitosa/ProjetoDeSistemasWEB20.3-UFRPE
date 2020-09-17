@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima/tempo</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="fundo">
+        <div class="busca">
+            <input type="text" class="textfield" placeholder="Nome da cidade">
+            <input type="button" value="buscar" class="botao">
+        </div>
+        <div class="principal">
+            <label class="inf"> Informação:</label><br>
+            <label class="titulo">Longitude:</label>
+            <label class="long-value" id="long">0</label><br>
+            <label class="titulo">Latitude:</label>
+            <label class="long-value" id="lat">0</label><br>
+            
+            <label class="titulo">Velocidade do vento:</label>
+            <label class="long-value" id="vento">none</label><br>
+            <label class="titulo">Cidade:</label>
+            <label class="long-value" id="cidade">none</label>
+            <label class="titulo">Pressão:</label>
+            <label class="long-value" id="pressao">none</label>
+            <label class="titulo">Umidade:</label>
+            <label class="long-value" id="umidade">none</label>
+        </div>
+    </div>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
