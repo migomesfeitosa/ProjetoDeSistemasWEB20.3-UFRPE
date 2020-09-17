@@ -45,7 +45,7 @@ body{
     outline: none;
 }
 
-#pesquisar::pressed{
+#pesquisar:active{
     background-color: gray;
 }
 
