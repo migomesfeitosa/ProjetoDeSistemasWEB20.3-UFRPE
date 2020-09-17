@@ -1,0 +1,34 @@
+<html lang="en"> 
+
+<head> 
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device=width,initial-scale=1.0">
+<title> "Cronometro" </title> 
+<link rel="stylesheet" href="style.css">
+
+</head> 
+<body> 
+ 
+    <div class="parametros" style="background: #a33d3d;">
+        <p style="color: #fff; font-size: 45pt; margin-bottom: 0px; margin-left: 60px;">
+            <label id="horas">00</label> :
+            <label id="minutos">00</label> :
+            <label id="segundos">00</label> 
+        </p>
+        <br>
+        
+    </div>
+    <br>
+    <div id="eventos"> 
+        <label>Minutos : </label>
+        <input type="text" value="0"  id="campo" >
+        <input type="button" onclick="iniciar();" value="Iniciar" id="iniciar" >
+    </div>
+    
+
+    <script src="js.js"></script>
+   
+  
+</body> 
+</html>

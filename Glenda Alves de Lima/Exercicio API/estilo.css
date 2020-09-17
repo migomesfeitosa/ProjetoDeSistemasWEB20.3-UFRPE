@@ -1,0 +1,22 @@
+
+body{
+	margin: 0;
+	padding: 0;
+	background-image: url(https://www.bomdiahoje.com.br/wp-content/uploads/2017/04/Dia-de-luz-hoje.jpg);
+	background-size: 120%;
+}
+#pesquisa{
+	margin-left: 30%;
+	margin-top: 5%;
+	width: 400px;
+	height: 50px;	
+	font-size: 23px;
+}
+#dados{
+	width: 350px;
+	height: 200px;
+	margin-left: 30%;
+	background-color: blanchedalmond(0,0,0,0.4);
+	font-size: 23px;
+	
+}
