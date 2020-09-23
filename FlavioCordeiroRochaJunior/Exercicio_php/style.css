@@ -1,0 +1,48 @@
+
+
+.button{
+    margin-left: 30%;
+    width: 80px;
+    height: 30px;
+    background-image: linear-gradient(to bottom,#27B8EC,#7CD6EB);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.button:hover{
+    background-image: linear-gradient(to bottom,#0098E4,#0098E4);
+}
+
+.textfield{
+    margin-top: 5px;
+    width: 220px;
+    height: 20px;
+
+
+}
+.textfield::placeholder{
+    font-size: 15px;
+}
+.textfield:focus{
+    background-color: #7CD6EB;
+}
+
+.caixa{
+    width: 230px;
+    height: 350px;
+    margin-top: 100px;
+    margin-left: 35%;
+    background-color: azure;
+    box-shadow: 5px 2px 10px black;
+
+}
+
+.legenda{
+    font-size: 25px;
+}
+
+.combo{
+    margin-top: 5px;
+    background: #5289E5;
+}
