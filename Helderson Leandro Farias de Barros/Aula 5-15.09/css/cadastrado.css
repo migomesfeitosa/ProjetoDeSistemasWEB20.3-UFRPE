@@ -1,0 +1,11 @@
+body{
+    background-color: #003153;
+}
+
+.texto-div{
+    margin:auto;
+    width: 40%;
+    background-color: white;
+    margin-top: 100px;
+    padding: 50px;
+}
