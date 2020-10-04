@@ -11,7 +11,7 @@ class AuthUser{
         session_start();
         $user = $_POST['user'];
         $password = $_POST['password'];
-        $userDao = new UserDAO();
+        $userDao = UserDAO::getInstance();
         return $userDao->verifyUserAndPassword($user, $password);
     }
 

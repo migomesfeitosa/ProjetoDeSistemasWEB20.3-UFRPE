@@ -30,7 +30,21 @@ switch ($path) {
     
     default:
         if (isset($_SESSION['logged_user'])){
-            $auth_controller->dashboard();
+            
+            switch ($path) {
+                case "/study":
+                    
+                    break;
+
+                case "/teacher":
+                    
+                    break;    
+                
+                default:
+                    $auth_controller->dashboard();
+                    break;
+            }
+
         }
         else {
             $auth_controller->login();
