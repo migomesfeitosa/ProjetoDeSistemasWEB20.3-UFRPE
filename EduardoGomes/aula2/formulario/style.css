@@ -13,12 +13,12 @@
     background: #ffffff;
 }
 
-#container .header {
+.header {
     margin-top: -3.2rem;
     padding-bottom: 3.2rem;
 }
 
-#container .header h1{
+.header h1{
     text-align: center;
     font-size: 3.6rem;
     font-weight: 500;
@@ -42,12 +42,12 @@
 
 }
 
-#criar-conta .input-block label,.photo-block label,.input-radio label,.select-block label, .textarea-block label, .div-sexo label, .checkbox-block label{
+.input-block label,.photo-block label,.input-radio label,.select-block label, .textarea-block label, .div-sexo label, .checkbox-block label{
     font: 500 1.4rem Archivo;
     color:#3d3947;
 }
 
-#criar-conta .input-block input,.select-block select, .textarea-block textarea {
+.input-block input,.select-block select, .textarea-block textarea {
     width: 100%;
     height: 3rem;
 
@@ -61,7 +61,7 @@
     font: 1.2rem Archivo;
 }
 
-#criar-conta .photo-block input{
+ .photo-block input{
     font: 1.2rem Archivo;
     padding-left: 0.8rem;
     margin-bottom: 1.6rem;
@@ -69,13 +69,13 @@
 
 }
 
-#criar-conta .div-sexo {
+.div-sexo {
     margin-bottom: 1.6rem;
 
 }
 
 
-#criar-conta .input-radio input{
+.input-radio input{
     margin: 0.8rem 0.4rem 0.8rem auto;
     height: 1.2rem;
     width: 1.2rem;
@@ -83,7 +83,8 @@
 
 }
 
-#criar-conta .textarea-block  textarea{
+
+.textarea-block  textarea{
     padding: 1.2rem 0.8rem;
 
     height: 12rem;
