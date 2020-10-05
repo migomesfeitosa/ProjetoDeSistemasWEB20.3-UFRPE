@@ -5,9 +5,11 @@ session_start();
 $user = $_SESSION["logged_user"];
 
 ?>
+<head>
+    <link rel="stylesheet" href="/styles/dashboard.css">
+</head>
 
-
-<div id="content">
+<div class="dashboard-content">
     <h1>Hello <?php echo $user->getUser(); ?> </h1>
 </div>
 

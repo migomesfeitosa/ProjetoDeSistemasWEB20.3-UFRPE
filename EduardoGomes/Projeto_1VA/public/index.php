@@ -37,7 +37,7 @@ switch ($path) {
                     break;
 
                 case "/teacher":
-                    
+                    $auth_controller->teacher();
                     break;    
                 
                 default:

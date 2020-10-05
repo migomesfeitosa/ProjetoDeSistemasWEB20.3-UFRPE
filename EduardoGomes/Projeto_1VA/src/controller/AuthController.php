@@ -16,6 +16,10 @@ class AuthController {
         require __DIR__ . "/../view/dashboard.php";
     }
 
+    public function teacher(){
+        require __DIR__ . "/../view/teacher.php";
+    }
+
     public function checkLogin(){
 
         /* $userReturn = AuthUser::authUser(); */
@@ -23,7 +27,9 @@ class AuthController {
         if ($userReturn !=null){
             $_SESSION['logged_user'] = $userReturn;
         }
-        $_SESSION['message'] = "Usuário e/ou senha inválidos";
+        else {
+            $_SESSION['message'] = "Usuário e/ou senha inválidos";
+        }
         header("Location: /");
     }
 

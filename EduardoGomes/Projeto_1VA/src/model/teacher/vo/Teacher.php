@@ -11,15 +11,17 @@ class Teacher {
     private $whatsapp;
     private $biography;
     private $discipline;
+    private $cost;
     private $weekday;
     private $schedule;
 
-    public function __construct($userId, $avatar, $whatsapp, $biography, $discipline, $weekday, $schedule){
+    public function __construct($userId, $avatar, $whatsapp, $biography, $discipline, $cost, $weekday, $schedule){
        $this->userId = $userId;
        $this->avatar = $avatar;
        $this->whatsapp = $whatsapp;
        $this->biography = $biography;
        $this->discipline = $discipline;
+       $this->cost = $cost;
        $this->weekday = $weekday;
        $this->schedule = $schedule;
     }
@@ -46,6 +48,10 @@ class Teacher {
 
     public function getDiscipline(){
         return $this->discipline;
+    }
+
+    public function getCost(){
+        return $this->cost;
     }
 
     public function getWeekday(){
@@ -78,6 +84,10 @@ class Teacher {
 
     public function setDiscipline($discipline){
         $this->discipline = $discipline;
+    }
+
+    public function setCost($cost){
+        $this->cost = $cost;
     }
 
     public function setWeekday($weekday){
