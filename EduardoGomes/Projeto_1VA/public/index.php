@@ -6,10 +6,15 @@ use Projeto_1VA\src\controller\AuthController;
 session_start();
 
 $auth_controller = new AuthController();
-$path = $_SERVER['REQUEST_URI'];
+
+$path= "";
+if (isset($_SERVER["PATH_INFO"])){
+    $path = $_SERVER["PATH_INFO"];
+}
 $method = $_SERVER['REQUEST_METHOD'];
 
 switch ($path) {
+    
     case "/auth":
         if($method == "POST"){
             $auth_controller->checkLogin();
@@ -17,6 +22,16 @@ switch ($path) {
         else {
             header("Location: /");
         }
+        break;
+    
+
+    case "/login":
+        $auth_controller->login();
+        break;
+
+
+    case "/register":
+        $auth_controller->register();
         break;
 
     case "/logout":
@@ -27,11 +42,26 @@ switch ($path) {
             header("Location: /");
         }
         break;
+
+
+    case "/create-user":
+        if($method == "POST"){
+            $auth_controller->checkCreateUser();
+        }
+        else {
+            header("Location: /register");
+        }
+        break;
     
+
     default:
         if (isset($_SESSION['logged_user'])){
             
             switch ($path) {
+                case "/home":
+                    $auth_controller->dashboard();
+                    break;
+
                 case "/study":
                     
                     break;
@@ -41,15 +71,13 @@ switch ($path) {
                     break;    
                 
                 default:
-                    $auth_controller->dashboard();
+                    header("Location: /home");
                     break;
             }
 
         }
         else {
-            $auth_controller->login();
+            header("Location: /login");
         }
         break;
 }
-
-?>

@@ -1,7 +1,6 @@
 <?php 
 include __DIR__ ."/template/header.php";
 
-session_start();
 $user = $_SESSION["logged_user"];
 
 ?>

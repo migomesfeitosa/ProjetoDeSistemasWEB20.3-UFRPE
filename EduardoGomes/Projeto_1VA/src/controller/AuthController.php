@@ -2,14 +2,16 @@
 
 namespace Projeto_1VA\src\controller;
 
-use Projeto_1VA\src\model\user\dao\UserDAO;
 use Projeto_1VA\src\model\user\services\AuthUser;
-use Projeto_1VA\src\model\user\vo\User;
 
 class AuthController {
 
     public function login(){
         require __DIR__ . "/../view/login.php";
+    }
+
+    public function register(){
+        require __DIR__ . "/../view/register.php";
     }
 
     public function dashboard(){
@@ -21,16 +23,27 @@ class AuthController {
     }
 
     public function checkLogin(){
-
-        /* $userReturn = AuthUser::authUser(); */
-        $userReturn = new User("admin", "admin");
+    
+        $userReturn = AuthUser::authLogin();
         if ($userReturn !=null){
+            
             $_SESSION['logged_user'] = $userReturn;
         }
         else {
             $_SESSION['message'] = "Usuário e/ou senha inválidos";
+           
         }
         header("Location: /");
+    }
+
+    public function checkCreateUser(){
+        $return = AuthUser::authCreateUser();
+        if(!$return){
+            $_SESSION['message'] = "Nome de Usuario já existe";
+            header("Location: /register");
+        }else{
+            header("Location: /");
+        }
     }
 
     public function logout(){

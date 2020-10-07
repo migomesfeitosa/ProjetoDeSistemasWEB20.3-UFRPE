@@ -1,4 +1,7 @@
-<?php include __DIR__ ."/template/header.php" ?>
+<?php include __DIR__ ."/template/header.php"; 
+
+use Projeto_1VA\src\utils\Utils;
+?>
 
 <head>
     <link rel="stylesheet" href="/styles/teacher.css">
@@ -6,7 +9,7 @@
 </head>
 
 <main>
-    <form action="/save-teacher" id="create-teacher" method="POST">
+    <form action="/create-teacher" id="create-teacher" method="POST">
         <fieldset>
             <legend>Seus dados</legend>
             <div class="input-block">
@@ -30,9 +33,9 @@
                 <select name="discipline" id="discipline" required>
                         
                     <option value="">Selecione uma opçao</option>
-                    {%for subject in subjects%}
-                        <option value="{{loop.index0}}">{{subject}}</option>
-                    {%endfor%}
+                        <?php for ($i=0; $i < sizeof(Utils::$disciplines); $i++) : ?>
+                            <option value=<?=$i?>><?= Utils::$disciplines[$i]?></option>
+                         <?php endfor ?>
 
                 </select>
             </div>
@@ -43,30 +46,28 @@
         </fieldset>
 
         <fieldset id="schedule-items">
-            <legend>Horários disponíveis 
-                <button type="button" id="add-time">+ Novo Horário</button>
-            </legend>
+            <legend>Horário disponível</legend>
 
             <div class="schedule-item">
                 <div class="select-block">
                     <label for="weekday">Dia da semana</label>
-                    <select name="weekday[]" required>
+                    <select name="weekday" required>
 
                         <option value="">Selecione uma opçao</option>
-                        {%for weekday in weekdays%}
-                            <option value="{{loop.index0}}">{{weekday}}</option>
-                        {%endfor%}
+                            <?php for ($i=0; $i < sizeof(Utils::$weekdays); $i++) : ?>
+                                <option value=<?=$i?>><?= Utils::$weekdays[$i]?></option>
+                            <?php endfor ?>
 
                     </select>
                 </div>
                 <div class="input-block">
                     <label for="time_from">Das</label>
-                    <input name="time_from[]" type="time" required>
+                    <input name="time_from" type="time" required>
                 </div>
 
                 <div class="input-block">
                     <label for="time_to">Até</label>
-                    <input name="time_to[]" type="time" required>
+                    <input name="time_to" type="time" required>
                 </div>
             </div>
 

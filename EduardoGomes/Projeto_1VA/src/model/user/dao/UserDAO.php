@@ -1,7 +1,8 @@
 <?php
-
 namespace Projeto_1VA\src\model\user\dao;
 use Projeto_1VA\src\model\user\vo\User;
+
+require "/Users/Pichau/ProjetoDeSistemasWEB20.3-UFRPE/EduardoGomes/Projeto_1VA/src/database/dbconnection.php";
 
 class UserDAO implements IUserDAO{
 
@@ -15,7 +16,15 @@ class UserDAO implements IUserDAO{
     }
 
     function create(User $user){
-
+        $link = getConnection();
+        $query = "insert into users (name, user, password) values ('{$user->getName()}', '{$user->getUser()}', '{$user->getPassword()}')";
+        $result = $link->query($query);
+        if (!$result){
+            echo mysqli_error($link);
+            $link->close();
+            exit(0);
+        }
+        $link->close();
     }
 
     function update($id, User $user){
@@ -31,7 +40,16 @@ class UserDAO implements IUserDAO{
     }
 
     function findByUser($user){
-        
+        $link = getConnection();
+        $query = "select * from users where user= '{$user}'";
+        if($result = $link->query($query)){
+            while ($row = $result->fetch_row()){
+                $link->close();
+                return new User($row[0], $row[1], $row[2], $row[3]);
+            }
+        }
+        $link->close();
+        return null;
     }
 
     function findAll(){
@@ -39,7 +57,16 @@ class UserDAO implements IUserDAO{
     }
 
     function verifyUserAndPassword($user, $password){
-
+        $link = getConnection();
+        $query = "select * from users where user= '{$user}' and password= '{$password}'";
+        if($result = $link->query($query)){
+            while ($row = $result->fetch_row()){
+                $link->close();
+                return new User($row[0], $row[1], $row[2], $row[3]);
+            }
+        }
+        $link->close();
+        return null;
     }
 
     

@@ -13,9 +13,10 @@ class Teacher {
     private $discipline;
     private $cost;
     private $weekday;
-    private $schedule;
+    private $time_from;
+    private $time_to;
 
-    public function __construct($userId, $avatar, $whatsapp, $biography, $discipline, $cost, $weekday, $schedule){
+    public function __construct($userId, $avatar, $whatsapp, $biography, $discipline, $cost, $weekday, $time_from, $time_to){
        $this->userId = $userId;
        $this->avatar = $avatar;
        $this->whatsapp = $whatsapp;
@@ -23,7 +24,8 @@ class Teacher {
        $this->discipline = $discipline;
        $this->cost = $cost;
        $this->weekday = $weekday;
-       $this->schedule = $schedule;
+       $this->time_from = $time_from;
+       $this->time_to = $time_to;
     }
 
     public function getId(){
@@ -58,8 +60,12 @@ class Teacher {
         return $this->weekday;
     }
 
-    public function getSchedule(){
-        return $this->schedule;
+    public function getTimeFrom(){
+        return $this->time_from;
+    }
+
+    public function getTimeTo(){
+        return $this->time_to;
     }
 
     public function setId($id){
@@ -94,8 +100,12 @@ class Teacher {
         $this->weekday = $weekday;
     }
 
-    public function setSchedule($schedule){
-        $this->schedule = $schedule;
+    public function setTimeFrom($time_from){
+        $this->time_from = $time_from;
+    }
+
+    public function setTimeTo($time_to){
+        $this->time_to = $time_to;
     }
 
 

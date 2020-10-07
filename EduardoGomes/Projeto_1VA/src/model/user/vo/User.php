@@ -9,9 +9,18 @@ class User
     private $user;
     private $password;
     
-    public function __construct($user, $password){
+    public function __construct($name, $user, $password){
+        $this->name = $name;
         $this->user = $user;
         $this->password = $password;
+    }
+
+    public function getId(){
+        return $this->id;
+    }
+
+    public function getName(){
+        return $this->name;
     }
 
     public function getUser(){
@@ -20,6 +29,14 @@ class User
 
     public function getPassword(){
         return $this->password;
+    }
+
+    public function setId($id){
+        return $this->id = $id;
+    }
+
+    public function setName($name){
+        return $this->name = $name;
     }
 
     public function setUser($user){
