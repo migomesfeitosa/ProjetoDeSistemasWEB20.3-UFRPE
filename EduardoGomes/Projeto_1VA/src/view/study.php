@@ -23,7 +23,7 @@ $teachers = $teacherDao->findAll();
     <main>
 
         <?php if(sizeof($teachers)==0) : ?>
-            <p class="no-results">Nenhum professor encontrado na sua pesquisa</p>
+            <p class="no-results">Nenhum professor encontrado</p>
         <?php else : ?>
             <?php for ($i=0; $i < sizeof($teachers); $i++) : ?>
             <article class="teacher-item">
@@ -36,11 +36,14 @@ $teachers = $teacherDao->findAll();
                     <div>
                         <strong><?=$teacherUser->getName()?></strong>
                         <h2><?= Utils::convertTimeFormat($teachers[$i]->getTimeFrom())?> - <?= Utils::convertTimeFormat($teachers[$i]->getTimeTo())?></h2>
+                        <h2><?= $teachers[$i]->getWeekday()?></h2>
                         <span><?=$teachers[$i]->getDiscipline()?></span>
                     </div>
                 </header>
-            
-                <p><?=$teachers[$i]->getBiography()?></p>
+                
+                <div class="div-bio">
+                    <p><?=$teachers[$i]->getBiography()?></p>
+                </div>
             
                 <footer>
                     <p>Preço/hora<strong>R$ <?=$teachers[$i]->getCost()?></strong>

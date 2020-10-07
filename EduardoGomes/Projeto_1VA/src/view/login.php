@@ -14,7 +14,7 @@ namespace Projeto_1VA\src\view;
     <title>Login
     </title>
 </head>
-<body id="body-page">
+<body id="page-body">
 
     <div class="div-login">
         

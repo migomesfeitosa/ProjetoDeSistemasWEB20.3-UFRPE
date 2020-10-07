@@ -15,7 +15,7 @@ class Utils{
 
     public static function convertTimeFormat($time){
         $hours = sprintf("%02d",intdiv($time, 60));
-        $minutes = sprintf("%02d",fmod($time, 60) * 60);
+        $minutes = sprintf("%02d",fmod($time, 60));
         return $hours . ":" . $minutes;
     }
 }
