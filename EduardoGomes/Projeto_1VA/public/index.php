@@ -72,7 +72,7 @@ switch ($path) {
                     break;
 
                 case "/study":
-                    
+                    $auth_controller->study();
                     break;
 
                 case "/teacher":

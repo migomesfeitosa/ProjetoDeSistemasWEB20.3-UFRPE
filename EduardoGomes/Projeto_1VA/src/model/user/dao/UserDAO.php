@@ -2,7 +2,7 @@
 namespace Projeto_1VA\src\model\user\dao;
 use Projeto_1VA\src\model\user\vo\User;
 
-require "/Users/Pichau/ProjetoDeSistemasWEB20.3-UFRPE/EduardoGomes/Projeto_1VA/src/database/dbconnection.php";
+include_once "/Users/Pichau/ProjetoDeSistemasWEB20.3-UFRPE/EduardoGomes/Projeto_1VA/src/database/dbconnection.php";
 
 class UserDAO implements IUserDAO{
 

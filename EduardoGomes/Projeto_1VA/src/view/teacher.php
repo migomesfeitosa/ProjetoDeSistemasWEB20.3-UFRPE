@@ -1,6 +1,7 @@
-<?php include __DIR__ ."/template/header.php"; 
+<?php include __DIR__ ."/template/header.php";
 
 use Projeto_1VA\src\utils\Utils;
+
 ?>
 
 <head>
@@ -34,7 +35,7 @@ use Projeto_1VA\src\utils\Utils;
                         
                     <option value="">Selecione uma opçao</option>
                         <?php for ($i=0; $i < sizeof(Utils::$disciplines); $i++) : ?>
-                            <option value=<?=$i?>><?= Utils::$disciplines[$i]?></option>
+                            <option value=<?=Utils::$disciplines[$i]?>><?= Utils::$disciplines[$i]?></option>
                          <?php endfor ?>
 
                 </select>
@@ -55,7 +56,7 @@ use Projeto_1VA\src\utils\Utils;
 
                         <option value="">Selecione uma opçao</option>
                             <?php for ($i=0; $i < sizeof(Utils::$weekdays); $i++) : ?>
-                                <option value=<?=$i?>><?= Utils::$weekdays[$i]?></option>
+                                <option value=<?=Utils::$disciplines[$i]?>><?= Utils::$weekdays[$i]?></option>
                             <?php endfor ?>
 
                     </select>

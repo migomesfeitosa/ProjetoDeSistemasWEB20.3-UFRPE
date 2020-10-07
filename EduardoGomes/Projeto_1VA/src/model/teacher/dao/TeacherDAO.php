@@ -4,7 +4,7 @@ namespace Projeto_1VA\src\model\teacher\dao;
 use Projeto_1VA\src\model\teacher\dao\ITeacherDAO;
 use Projeto_1VA\src\model\teacher\vo\Teacher;
 
-require "/Users/Pichau/ProjetoDeSistemasWEB20.3-UFRPE/EduardoGomes/Projeto_1VA/src/database/dbconnection.php";
+include_once "/Users/Pichau/ProjetoDeSistemasWEB20.3-UFRPE/EduardoGomes/Projeto_1VA/src/database/dbconnection.php";
 
 class TeacherDAO implements ITeacherDAO{
 

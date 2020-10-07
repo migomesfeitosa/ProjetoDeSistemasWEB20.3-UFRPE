@@ -14,7 +14,7 @@ class AuthTeacher{
         $avatar = $_POST['avatar'];
         $whatsapp = $_POST['whatsapp'];
         $biography = $_POST['biography'];
-        $biography = $_POST['discipline'];
+        $discipline = $_POST['discipline'];
         $cost = $_POST['cost'];
         $weekday = $_POST['weekday'];
         $time_from = Utils::convertTime($_POST['time_from']);
@@ -22,7 +22,7 @@ class AuthTeacher{
 
         $teacherDao = TeacherDAO::getInstance();
 
-        $newTeacher = new Teacher(null, $userId, $avatar, $whatsapp, $biography, $biography, $cost, $weekday, $time_from, $time_to);
+        $newTeacher = new Teacher(null, $userId, $avatar, $whatsapp, $biography, $discipline, $cost, $weekday, $time_from, $time_to);
 
         $teacherDao->create($newTeacher);
 

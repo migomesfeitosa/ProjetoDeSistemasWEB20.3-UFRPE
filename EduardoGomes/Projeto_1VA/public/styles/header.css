@@ -9,7 +9,7 @@
     margin-bottom: 0.5rem;
 }
 
-a{  
+.page-header a{  
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,6 +31,6 @@ a{
     font-family: 'Russo One', sans-serif;
 }
 
-a:hover{
+.page-header a:hover{
     opacity: 0.6;
 }

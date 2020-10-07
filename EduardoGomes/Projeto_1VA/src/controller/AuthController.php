@@ -23,6 +23,11 @@ class AuthController {
         require __DIR__ . "/../view/teacher.php";
     }
 
+    public function study(){
+        require __DIR__ . "/../view/study.php";
+    }
+
+
     
     public function logout(){
         unset($_SESSION['logged_user']);
