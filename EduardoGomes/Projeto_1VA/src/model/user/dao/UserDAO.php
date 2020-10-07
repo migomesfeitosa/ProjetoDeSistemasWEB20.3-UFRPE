@@ -36,7 +36,16 @@ class UserDAO implements IUserDAO{
     }
 
     function findById($id){
-
+        $link = getConnection();
+        $query = "select * from users where id= '{$id}'";
+        if($result = $link->query($query)){
+            while ($row = $result->fetch_row()){
+                $link->close();
+                return new User($row[0], $row[1], $row[2], $row[3]);
+            }
+        }
+        $link->close();
+        return null;
     }
 
     function findByUser($user){
@@ -53,7 +62,17 @@ class UserDAO implements IUserDAO{
     }
 
     function findAll(){
-
+        $link = getConnection();
+        $list = [];
+        $query = "select * from users";
+        if($result = $link->query($query)){
+            while ($row = $result->fetch_row()){
+                $obj = new User($row[0], $row[1], $row[2], $row[3]);
+                array_push($list, $obj);
+            }
+        }
+        $link->close();
+        return $list;
     }
 
     function verifyUserAndPassword($user, $password){

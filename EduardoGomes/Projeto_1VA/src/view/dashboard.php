@@ -9,7 +9,7 @@ $user = $_SESSION["logged_user"];
 </head>
 
 <div class="dashboard-content">
-    <h1>Hello <?php echo $user->getUser(); ?> </h1>
+    <h1>Hello <?php echo $user->getName(); ?> </h1>
 </div>
 
 <?php include __DIR__ ."/template/footer.php" ?>

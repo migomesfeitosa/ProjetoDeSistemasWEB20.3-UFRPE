@@ -2,6 +2,7 @@
 
 namespace Projeto_1VA\src\controller;
 
+use Projeto_1VA\src\model\teacher\services\AuthTeacher;
 use Projeto_1VA\src\model\user\services\AuthUser;
 
 class AuthController {
@@ -20,6 +21,12 @@ class AuthController {
 
     public function teacher(){
         require __DIR__ . "/../view/teacher.php";
+    }
+
+    
+    public function logout(){
+        unset($_SESSION['logged_user']);
+        header("Location: /");
     }
 
     public function checkLogin(){
@@ -46,8 +53,8 @@ class AuthController {
         }
     }
 
-    public function logout(){
-        unset($_SESSION['logged_user']);
-        header("Location: /");
+    public function checkCreateTeacher(){
+        AuthTeacher::authCreateTeacher();    
+        header("Location: /home");
     }
 }

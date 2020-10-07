@@ -52,6 +52,15 @@ switch ($path) {
             header("Location: /register");
         }
         break;
+
+    case "/create-teacher":
+        if($method == "POST"){
+            $auth_controller->checkCreateTeacher();
+        }
+        else {
+            header("Location: /teacher");
+        }
+        break;
     
 
     default:

@@ -11,17 +11,18 @@ class AuthUser{
         $user = $_POST['user'];
         $password = md5($_POST['password']);
         $userDao = UserDAO::getInstance();
-        return $userDao->verifyUserAndPassword($user, $password);
+        $userReturn = $userDao->verifyUserAndPassword($user, $password);
+        return $userReturn;
     }
 
     public static function authCreateUser(){
         $name = $_POST['name'];
         $user = $_POST['user'];
-        $password = $_POST['password'];
+        $password = md5($_POST['password']);
         $userDao = UserDAO::getInstance();
         $returnUser = $userDao->findByUser($user);
         if($returnUser==null){
-            $newUser = new User($name, $user, md5($password));
+            $newUser = new User(null, $name, $user, $password);
             $userDao->create($newUser);
             return true;
         }

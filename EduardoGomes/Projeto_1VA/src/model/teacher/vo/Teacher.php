@@ -16,17 +16,18 @@ class Teacher {
     private $time_from;
     private $time_to;
 
-    public function __construct($userId, $avatar, $whatsapp, $biography, $discipline, $cost, $weekday, $time_from, $time_to){
-       $this->userId = $userId;
-       $this->avatar = $avatar;
-       $this->whatsapp = $whatsapp;
-       $this->biography = $biography;
-       $this->discipline = $discipline;
-       $this->cost = $cost;
-       $this->weekday = $weekday;
-       $this->time_from = $time_from;
-       $this->time_to = $time_to;
-    }
+    public function __construct($id, $userId, $avatar, $whatsapp, $biography, $discipline, $cost, $weekday, $time_from, $time_to){
+        $this->id = $id;
+        $this->userId = $userId;
+        $this->avatar = $avatar;
+        $this->whatsapp = $whatsapp;
+        $this->biography = $biography;
+        $this->discipline = $discipline;
+        $this->cost = $cost;
+        $this->weekday = $weekday;
+        $this->time_from = $time_from;
+        $this->time_to = $time_to;
+     }
 
     public function getId(){
         return $this->id;
