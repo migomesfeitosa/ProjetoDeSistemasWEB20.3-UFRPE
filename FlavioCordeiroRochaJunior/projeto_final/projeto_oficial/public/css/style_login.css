@@ -1,0 +1,91 @@
+.fundo{
+    width: 100%+20px;
+    height: 745px;
+    margin-top: -8px;
+    margin-left: -8px;
+    margin-right: -8px;
+    background-image: url(../asset/principal.jpg);
+    background-size: 100% 800px;
+}
+
+.sub-fundo{
+    width: 100%+20px;
+    height: 745px;
+    margin-top: -8px;
+    margin-left: -8px;
+    
+    background-color: rgba(37, 37, 38, 0.5);
+}
+.caixa-login{
+    position: absolute;
+    top: 200px;
+    left: 35%;
+    width: 25%;
+    height: 185px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 3px solid white;
+}
+
+.botao-entrar{
+    width: 80px;
+    height: 30px;
+    margin-left: 30%;
+    margin-top: 10px;
+    color: white;
+    background-color: tomato;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+.sem-cadastro{
+    margin-top: -10px;
+}
+
+.botao-entrar:hover{
+    background-color: rgba(211,99,71,1);
+    border: 2px solid white;
+}
+.textfield{
+    width: 95%;
+    height: 30px;
+    margin-top: 5px;
+    text-indent: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.textfield::placeholder{
+    text-indent: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.caixa-dados{
+    border: none;
+}
+.legenda{
+    font-size: 20px;
+    color: tomato;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.sem-cadastro{
+    margin-top: 5px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media(max-width:576px){
+
+    .caixa-login{
+
+
+        left: 20%;
+        width: 60%;
+        height: 180px;
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 3px solid white;
+    }
+
+
+}
