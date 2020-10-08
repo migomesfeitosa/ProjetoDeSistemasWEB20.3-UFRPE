@@ -45,9 +45,7 @@ $teachers = $teacherDao->findByMe();
                     <p>Preço/hora<strong>R$ <?=$teachers[$i]->getCost()?></strong></p>
 
                     <div class="div-buttons">
-                        <a href="/mydisciplines?edit&id=<?=$teachers[$i]->getId()?>">
-                            <img src="/icons/update.svg" alt="update">
-                        </a>
+                        <a href="/mydisciplines?edit&id=<?=$teachers[$i]->getId()?>"><img src="/icons/update.svg" alt="update"></a>
 
                         <a href="/mydisciplines?delete&id=<?=$teachers[$i]->getId()?>">
                             <img src="/icons/delete.svg" alt="delete">
