@@ -1,0 +1,96 @@
+body {
+  font-family: "Roboto Slab", serif;
+  margin: 0;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.titulo-secao {
+  text-decoration: underline;
+  font-size: 2em;
+  text-align: center;
+}
+
+.sobre {
+  padding: 3em 0 6em 0;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+
+
+.destaque {
+  background: url(https://www.stoodi.com.br/wp-content/uploads/2020/02/plano-de-estudos-2-1-1920x1024.jpg) center bottom repeat-x;
+  -webkit-background-size: cover;
+  background-size: cover;
+  color: black;
+  height: 330px;
+  padding-top: 10em;
+}
+
+.destaque p {
+  width: 30em;
+}
+
+.destaque p:first-child {
+  width: 30em;
+  font-size: 1.5em;
+  line-height: 1.1;
+}
+
+.destaque p:first-child:first-line {
+  font-size: 3.0em;
+  font-weight: bold;
+}
+
+.destaque button {
+  border: none;
+  outline: none;
+  margin-top: 1em;
+  background: #66DDDD;
+  padding: .6em;
+  font-size: 1.2em;
+  -webkit-border-radius: 0.3em;
+  border-radius: 1em;
+  box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+}
+.destaque button:hover {
+  cursor: pointer;
+  background: white;
+  transition: 0.2s;
+}
+
+.sobre {
+  background: #ebebeb;
+}
+
+
+.sobre p {
+  font: .9em/1.8 sans-serif;
+  
+}
+.sobre p:first-child {
+  margin-bottom: 3em;
+  font-size: 1.3em;
+  line-height: 1.1;
+}
+
+footer{
+  background: #111;
+  padding: 11px 23px;
+  color: #fff;
+  text-align: center;
+}
+footer span a{
+  color: crimson;
+  text-decoration: none;
+}
+footer span a:hover{
+  text-decoration: underline;
+}

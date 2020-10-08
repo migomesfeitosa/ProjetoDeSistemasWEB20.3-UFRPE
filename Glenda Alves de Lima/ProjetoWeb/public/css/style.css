@@ -1,0 +1,120 @@
+body::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: url(https://www.stoodi.com.br/wp-content/uploads/2020/02/plano-de-estudos-2-1-1920x1024.jpg);
+    background-size: cover;
+    opacity: 0.5;
+    font-family: "Roboto Slab", serif;
+    
+
+}
+.login{
+
+    width: 320px;
+    height: 480px;
+    border: 2px solid #000;
+    border-radius: 80px 0px 80px 0px;
+    color: #fff;
+    background-color: rgb(0,0,5,0.90);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 68px 28px;
+   
+
+}
+.usuario{
+    border-radius: 50px;
+    position: absolute;
+    top: -50px;
+    left: 112px;
+
+}
+h1{
+    margin: 0;
+    padding-top:0 ;
+    padding-left: 0;
+    padding-bottom: 20px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 25px;
+
+}
+.login p {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+
+}
+.login input{
+    width: 100%;
+    margin-bottom: 21px;
+
+}
+.login input[type="email"],input[type="password"],input[type="text"] {
+    
+    border: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: white;
+    font-size: 16px;
+
+}
+
+
+.login input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 35px;
+    color: #000;
+    background: #66DDDD;
+    border-radius: 1.0em;
+    transition: 0.2s;
+    font-weight: bold;
+
+}
+.login input[type="submit"]:hover {
+    cursor: pointer;
+    background: white;
+    transition: 0.2s;
+}
+.login a {
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 25px;
+    margin-left: 60px;
+    color: white;
+    transition: 0.2s;
+    align-items: center;
+    justify-items: center;
+    
+
+    
+}
+.login a:hover{
+    transition: 0.2s;
+    color: #11b8e2;
+}
+#selecao{
+
+    width: 70px;
+}
+
+
+#opcao{
+    color: black;
+    background-color: rosybrown;
+    width: 70px;
+   
+}
+
