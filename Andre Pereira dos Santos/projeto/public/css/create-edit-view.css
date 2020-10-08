@@ -1,0 +1,88 @@
+/* basico das paginas com as operaçoes view,create,edit */
+
+#operacoes{
+	background-color:   #cef;
+	width: 98.5%;
+	height: 90%;
+	margin-top: 2%;
+}
+
+#operacoes .esquerda{
+	float: left;
+	width: 50%;
+}
+#operacoes div{
+	margin-top: 2%;
+}
+/* div com img ao criar animal */
+
+#local{
+	float: right;
+	position: static;
+	border: solid 2px;
+	margin-right: 8%;
+	height: 73%;
+	margin-top: 10%;
+	width: 40%;
+}
+
+input[type="text"],[type="date"]{
+width: 150px;
+height:30px;
+}
+
+select{
+	width: 100px;
+	height:30px;
+	
+}
+#clientes{
+	width: 240px;
+	height:30px;
+	
+}
+
+/* create animal */
+	#componentes{
+	width: 70%;
+		margin-left:10%;
+		border: solid 0.1px;
+	}
+	#salvar{
+		margin-left: 10%;
+		margin-top: 30%;
+		
+		
+	}
+	#salvarS{
+		margin-left: 10%;
+		margin-top: 5%;
+		
+		
+	}
+
+	/* create animal */
+	#comp{
+		width: 40%;
+		height:  73%;
+			margin-left:2%;
+			float: left;
+		}
+		#local{
+			width: 40%;
+			height:  73%;
+			margin-left:2%;
+			float: left;
+		}
+
+#imgAnimal{
+	width: 220px;
+	height:  250px;
+}
+
+
+#view{
+
+	font-size: 21px;
+	color:brown;
+}

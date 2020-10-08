@@ -1,0 +1,21 @@
+
+/* Footer */
+
+	#footer {
+		padding: 0.4em 0;
+		background: #6cc091;
+		color: #fff;
+		text-align: center;
+	}
+
+	
+
+		#footer .copyright {
+			color:white;
+			font-size: 1.0em;
+			margin: 0 0 2em 0;
+			padding: 0;
+		}
+
+
+	
