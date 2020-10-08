@@ -30,15 +30,54 @@ class TeacherDAO implements ITeacherDAO{
     }
 
     function update($id, Teacher $teacher){
-
+        $link = getConnection();
+        $query = "update teachers set avatar='{$teacher->getAvatar()}', whatsapp='{$teacher->getWhatsapp()}', biography='{$teacher->getBiography()}', discipline='{$teacher->getDiscipline()}', cost='{$teacher->getCost()}', weekday='{$teacher->getWeekday()}', time_from='{$teacher->getTimeFrom()}', time_to='{$teacher->getTimeTo()}' where id='{$id}' and userid= '{$_SESSION['logged_user']->getId()}' ";
+        $result = $link->query($query);
+        if(!$result){
+            $link->close();
+            return false;
+        }
+        $link->close();
+        return true;
     }
 
     function delete($id){
-        
+        $link = getConnection();
+        $query = "delete from teachers where id={$id} and userid={$_SESSION['logged_user']->getId()}";
+        $result = $link->query($query);
+        if(!$result){
+            echo mysqli_error($link);
+            $link->close();
+            exit(0);
+        }
+        $link->close();
     }
 
     function findById($id){
-        
+        $link = getConnection();
+        $query = "select * from teachers where id= '{$id}' and userid= '{$_SESSION['logged_user']->getId()}'";
+        if($result = $link->query($query)){
+            while ($row = $result->fetch_row()){
+                $link->close();
+                return new Teacher($row[0], $row[1], $row[2], $row[3], $row[4], $row[5], $row[6], $row[7], $row[8], $row[9], $row[9]);
+            }
+        }
+        $link->close();
+        return null;
+    }
+
+    function findByMe(){
+        $link = getConnection();
+        $query = "select * from teachers where userid= '{$_SESSION['logged_user']->getId()}'";
+        $list = [];
+        if($result = $link->query($query)){
+            while ($row = $result->fetch_row()){
+                $obj = new Teacher($row[0], $row[1], $row[2], $row[3], $row[4], $row[5], $row[6], $row[7], $row[8], $row[9], $row[9]);
+                array_push($list, $obj);
+            }
+        }
+        $link->close();
+        return $list;
     }
 
     function findAll(){

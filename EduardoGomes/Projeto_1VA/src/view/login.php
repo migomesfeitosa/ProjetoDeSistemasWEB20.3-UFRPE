@@ -45,9 +45,7 @@ namespace Projeto_1VA\src\view;
     <?php
     if(isset($_SESSION['message'])){
         echo "<p>".$_SESSION['message']."</p>";
-        echo "<p>".$_SESSION['um']."</p>";
         unset($_SESSION['message']);
-        unset($_SESSION['um']);
     }
     ?>
 

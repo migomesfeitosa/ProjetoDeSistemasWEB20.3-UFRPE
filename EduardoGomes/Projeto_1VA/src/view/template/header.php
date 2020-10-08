@@ -11,5 +11,6 @@
         <a href="/">Home</a>
         <a href="/study">Estudar</a>
         <a href="/teacher">Ser Professor</a>
+        <a href="/mydisciplines">Minhas Disciplinas</a>
         <form action="/logout" method="POST" name="logout"><a href="javascript:logout.submit()">Sair</a></form>
     </div>

@@ -7,28 +7,6 @@ use Projeto_1VA\src\model\user\services\AuthUser;
 
 class AuthController {
 
-    public function login(){
-        require __DIR__ . "/../view/login.php";
-    }
-
-    public function register(){
-        require __DIR__ . "/../view/register.php";
-    }
-
-    public function dashboard(){
-        require __DIR__ . "/../view/dashboard.php";
-    }
-
-    public function teacher(){
-        require __DIR__ . "/../view/teacher.php";
-    }
-
-    public function study(){
-        require __DIR__ . "/../view/study.php";
-    }
-
-
-    
     public function logout(){
         unset($_SESSION['logged_user']);
         header("Location: /");
@@ -61,5 +39,19 @@ class AuthController {
     public function checkCreateTeacher(){
         AuthTeacher::authCreateTeacher();    
         header("Location: /home");
+    }
+
+    public function checkUpdateTeacher($id){
+        $return = AuthTeacher::authUpdateTeacher($id);
+        if(!$return){
+            header("Location: /mydisciplines?edit&id=" . $id);
+        }else{
+            header("Location: /mydisciplines");
+        }
+    }
+
+    public function checkDeleteTeacher($id){
+        $return = AuthTeacher::authDeleteTeacher($id);
+        header("Location: /mydisciplines");
     }
 }
