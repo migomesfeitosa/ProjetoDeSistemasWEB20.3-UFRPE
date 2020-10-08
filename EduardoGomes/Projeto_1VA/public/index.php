@@ -97,14 +97,6 @@ switch ($path) {
                                     $id = $dataarray[1];
                                     $routes_controller->mydisciplinesEdit($id);
                                     break;
-
-                                case "update":
-                                    if(isset($query[1])){
-                                        $dataarray = explode("=", $query[1]);
-                                        $id = $dataarray[1];
-                                        $auth_controller->checkUpdateTeacher($id);
-                                    }
-                                    break;
                                 
                                 case "delete":
                                     if(isset($query[1])){
@@ -112,6 +104,10 @@ switch ($path) {
                                         $id = $dataarray[1];
                                         $auth_controller->checkDeleteTeacher($id);
                                     }
+                                    break;
+
+                                default:
+                                    header("Location: /");
                                     break;
                             }
                         }
