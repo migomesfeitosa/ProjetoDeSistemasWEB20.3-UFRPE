@@ -1,0 +1,180 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header{
+    display: inline-block;
+    background-color: #003153;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-size: 17px;
+}
+
+.left-link{
+    float: right;
+    margin-right: 5%;
+}
+
+.right-link{
+    float: left;
+    margin-left: 5%;
+}
+
+.link{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 14px 16px;
+    text-align: center;
+}
+
+.link:hover{
+    background-color: #4682b4;
+}
+
+.footer{
+    bottom: 0;
+    background-color: #003153;
+    color: white;
+    width: 100%;
+}
+
+.footer-text{
+    font-size: 17px;
+    margin-left: 5%;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.logout{
+    font-size: 17px;
+    border: none;
+    display: inline-block;
+    background-color: transparent;
+    padding: 14px 16px;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+}
+
+body{
+    font-size: 20px;
+}
+
+.vote-div{
+    display: inline-block;
+    width: 40%;
+    margin-left: 5%;
+    margin-top: 200px;
+    padding: 50px;
+}
+
+.user-div{
+    margin-bottom: 7px;
+}
+
+.question{
+    margin-bottom: 4px;
+}
+
+.description{
+    margin-top: 10px;
+    color: gray;
+}
+
+progress{
+    display:none;
+    -webkit-appearance: none;
+    width: 80%;
+    appearance: none;
+    padding: 5px;
+    height: 30px;
+}
+
+progress::-webkit-progress-bar{
+    background-color: #eee;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+progress::-webkit-progress-value{
+    background-color: #003153;
+}
+
+.enquetes-relacionadas{
+    margin-top: 165px;
+    width: 30%;
+    display: inline-block;
+    float: right;
+}
+
+.enquete-link{
+    display: block;
+    text-decoration: none;
+    color: #003153;
+}
+
+.dropbtn {
+    background-color: #003153;
+    outline: none;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #4682b4;
+  }
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+.dropdown-content a:hover {background-color: #ddd}
+
+
+.show {display:block;}
+
+.polls{
+    list-style-type: none;
+    margin-top: 100px;
+    margin-left: 3%;
+}
+
+.polls li{
+    margin-bottom: 10px;
+}
+
+.items-category{
+    margin-top: 10%;
+    margin-left: 5%;
+}
+
+.item-category{
+    margin: 10px;
+    color: #003153;
+    display: block;
+    text-decoration: none;
+}
