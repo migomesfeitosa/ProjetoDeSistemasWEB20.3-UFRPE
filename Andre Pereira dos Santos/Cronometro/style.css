@@ -1,0 +1,41 @@
+body{
+    background-image: url(https://i.pinimg.com/originals/de/89/d0/de89d00f4eb6d42ff9d2b7c0a7d0e25b.jpg);
+    background-size: cover;
+    align-items: center;
+}
+
+#inicio{
+    align-items: center;
+    width: 400px;
+    height: 200px;
+    background-color: rgb(0,0,0,0.0); 
+    margin-left: 300px;
+    margin-top: 20px;
+    opacity: 80%;
+    color: white;
+   
+}
+#inicio label{
+font-size: 22px;
+}
+#inicio input[type="text"]{
+    height: 28px;
+    width: 40px;
+    border-radius: 25%;
+}
+#inicio input[type="button"]{
+    height: 28px;
+    width: 60px;
+    background-color: darkolivegreen;
+    border-radius: 25%;
+}
+
+.campos{
+    align-items: center;
+    width: 28%;
+    height:100px;
+    background-color: rgb(0,0,0,0.4); 
+    margin-left: 300px;
+    margin-top: 50px;
+    opacity: 80%;
+}

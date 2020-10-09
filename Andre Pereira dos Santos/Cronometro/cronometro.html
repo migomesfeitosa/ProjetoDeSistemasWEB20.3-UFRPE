@@ -1,0 +1,34 @@
+<html lang="en"> 
+
+<head> 
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device=width,initial-scale=1.0">
+<title> Cronometro  </title> 
+<link rel="stylesheet" href="style.css">
+
+</head> 
+<body> 
+ 
+    <div class="campos" style="background: #141414;">
+        <p style="color: #fff; font-size: 45pt; margin-bottom: 0px;">
+            <label id="horas">00</label> :
+            <label id="minutos">00</label> :
+            <label id="segundos">00</label> 
+        </p>
+        <br>
+        
+    </div>
+    <br>
+    <div id="inicio"> 
+        <label>Insira os minutos : </label>
+        <input type="text" value="0"  id="tempo" >
+        <input type="button" onclick="play();" value="Iniciar" id="iniciar" >
+    </div>
+    
+
+    <script src="script.js"></script>
+   
+  
+</body> 
+</html>

@@ -1,0 +1,101 @@
+<html lang="en"> 
+
+<head> 
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device=width,initial-scale=1.0">
+<title> Formulario </title> 
+</head> 
+
+<body> 
+    <h1>Criar conta</h1>
+
+<form  name="Formulario"  method="POST" enctype="multipart/form-data"  action="http://www.atdsistemas.com.br/web/formulario/"> 
+
+    <fieldset>
+
+        <legend>
+         Informações Pessoais 
+        </legend>
+        <label for="nome">Primeiro nome:</label>
+        <input type="text" id="nome" name="nome">
+    <br><br>
+        <label for="im">Foto:</label>
+        <input type="file" id="im" name="foto">
+    <br><br>
+        <label for="t">Endereço:</label>
+        <input type="text" id="t" name="endereco">
+    
+    <br><br>
+        <label>Sexo:</label>
+    <br><br> 
+        <input type="radio"  id="mas" name="sexo" >
+        <label for="mas">Masculino</label>
+        <br><br>
+        <input type="radio" id="fem" name="sexo">
+        <label for="fem">Feminio</label>
+        <br><br>
+        <input type="radio" id="ndf" name="sexo">
+        <label for="ndf">Não Definido</label>
+        <br><br>
+
+        <label for="selecao">Nivel de Formação Acadêmica Concluido : </label>
+        
+        <select id="selecao" name="formacao">
+        <option value="nen"> Nenhuma Formação</option>
+        <option value="n"> Ensino Medio</option>
+        <option value="nenh"> Ensino Superior</option>
+
+        </select>
+
+<br><br>
+
+        <label for="eu">Quem sou eu?</label>
+        <br></b>
+        <input type="text"  id="eu" name="descricao">
+
+    </fieldset>
+    <fieldset>
+
+        <legend>
+        Redes Sociais :
+        </legend>
+        <label for="twitter">Twitter:</label>
+        <input type="url" id="twitter" name="twitter">
+        <br><br>
+        <label for="insta">Instagram:</label>
+        <input type="url" id="insta" name="instagram">
+        <br><br>
+        <label for="face">Facebook:</label>
+        <input type="url" id="face" name="facebook">
+    <br><br>
+ 
+
+    </fieldset>
+<br><br>
+    <fieldset>
+
+        <legend>
+        Informações de Login :
+        </legend>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <br><br>
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha">
+
+        <br><br>
+        <input type="checkbox" id="check" name="lembrar">
+        <label for="check">Lembrar-me</label>
+
+    <br><br> 
+
+    </fieldset>
+    <br>
+    <button type="reset">Limpar Campos</button>
+    <button type="submit"> Enviar</button>
+
+</form>
+  
+</body> 
+</html>

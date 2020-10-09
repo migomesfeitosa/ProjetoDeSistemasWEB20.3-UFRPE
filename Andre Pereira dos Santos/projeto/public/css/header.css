@@ -1,0 +1,39 @@
+
+
+/* Header */
+
+
+#marca{
+
+	font-size: 35px;
+	float: left;
+	margin-left: 34%;
+}
+
+	#header {
+		color: #fff;
+		cursor: default;
+		height: 3.25em;
+		left: 0;
+		line-height: 3.25em;
+		position: absolute;
+		text-align: right;
+		top: 2em;
+		width: 100%;
+		z-index: 10001;
+	}
+
+		#header .inner {
+			margin: 0 auto;
+			position: relative;
+		}
+
+
+		
+
+
+
+#sair{
+	margin-right: 5%;
+	float: right;
+}

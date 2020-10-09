@@ -1,0 +1,118 @@
+/* tabela */
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	border: solid 2px;
+	width: 60%;
+}
+
+#demo-table {
+	margin-top: 2%;
+	font: 90% sans-serif;
+	background-color: #efe;
+	border-collapse: collapse;
+	empty-cells: show;
+	border: 1px solid #7a7;
+	width: 98%;
+	}
+  
+  #demo-table > caption {
+	text-align: left;
+	font-weight: bold;
+	font-size: 100%;
+	border-bottom: .2em solid #4ca;
+	margin-bottom: .3em;
+	}
+  
+ 
+  
+  #demo-table th {
+	font-weight: bold;
+	padding-left: .1em;
+	}
+  
+  
+  /* header */
+  #demo-table > thead > tr:first-child > th {
+	text-align: center;
+	color: blue;
+	}
+  
+  #demo-table > thead > tr + tr > th {
+	font-style: italic;
+	color: gray;
+	}
+  
+  /* fix size of superscript */
+  #demo-table sup {
+	font-size: 75%;
+	}
+  
+  /* body */
+  #demo-table td {
+	background-color: #cef;
+	padding:.2em .2em .2em 1em;
+	}
+  
+  #demo-table tbody th:after {
+	content: ":";
+	}
+  
+  
+  /* footer */
+  #demo-table tfoot {
+	font-weight: bold;
+	}
+  
+  #demo-table tfoot th {
+	color: blue;
+	}
+  
+  #demo-table tfoot th:after {
+	content: ":";
+	}
+  
+  #demo-table > tfoot td {
+	background-color: #cee;
+	}
+  
+  #demo-table > tfoot > tr:first-child td {
+	border-top: .2em solid #7a7;
+	}
+
+/* Button dentro da tabela */
+	
+	
+	#topo{
+
+		background: darkslategrey;
+		height: 13%;
+		width: 98%;
+	}
+
+	#link{
+
+	margin-top: 1%;
+	color: white;
+	}
+
+	#esquerda{
+		float: left;
+		margin-left: 2%;
+		margin-top: 2%;
+		font-size: 25px;
+		color: white;
+	}
+	#direita{
+		float: right;
+		margin-right: 2%;
+		margin-top: 1%;
+	}
+
+	#new{
+		font-size: 20px;
+		color: white;
+	
+
+	}

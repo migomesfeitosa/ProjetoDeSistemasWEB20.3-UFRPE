@@ -1,0 +1,84 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    font-family: "Comfortaa",sans-serif;
+    background-color:teal ;
+
+}
+#left{
+    float: left;
+    width: 250px;
+    height: 290px;
+    border:solid 1px;
+}
+#right{
+   
+    float: left;
+    width: 250px;
+    height: 290px;
+    margin-left: 12%;
+    border:solid 1px;
+}
+#center{
+    float: right;
+    width: 250px;
+    height: 290px;
+    border:solid 1px;
+}
+#envio{
+    background-color: lightgreen;
+    margin-left: 37%;
+    width: 180px;
+    height: 50px;
+    border:solid 1px;
+}
+#field{
+   background-image: url(../fundo.png);
+   height: 330px;
+}
+#field legend{
+    color: red;
+    font-size: 26px;
+}
+
+#selecao{
+    width: 70px;
+}
+#selecao option{
+    width: 70px;
+}
+form label,input,select{
+
+margin-left: 4%;
+    
+}
+
+#dados{
+    background-image: url(https://elevemarketing.com.br/wp-content/uploads/2016/06/focar-cliente.png);
+    background-size: 140%;
+    height: 458px;
+   
+}
+#exibir{
+    border: solid 1px;
+    height: 300px;
+    width: 380px;
+    margin-left: 27%;
+    
+}
+#exibir label{
+   font-size: 22px;
+    color: white;
+    margin-top: 5%;
+}
+#exibir #txt{
+    font-size: 22px;
+     color: black;
+     margin-top: 5%;
+ }
+#titulo{
+    margin-left: 32%;
+    font-size: 26px;
+}
+

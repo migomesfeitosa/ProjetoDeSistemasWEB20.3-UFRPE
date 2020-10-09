@@ -1,0 +1,171 @@
+
+
+body{
+
+	background-image: url("tela.jpg");
+	background-size: 190%;
+	font-family: Helvetica;
+	width: 100%;
+    margin: 0 auto;
+    padding: 0px;
+
+
+}
+
+
+.fundo{
+
+	background-color: rgb(0,0,0,0.4);
+	background-size: 170%;
+	top: 0;
+}
+
+
+
+.tela
+{
+	background-color: rgb(0,0,0,0.8);
+	width: 45%;
+	height: 550px;
+	margin: 30px 0 0 280px;
+	padding-top: 20px;
+	text-align: center;
+	border-radius: 2px;
+	
+}
+
+.campo
+{
+	width:60%;
+	height: 45px;
+	border-radius: 2%;
+	background-color: #333333;
+	opacity: 100%;
+	margin-top: 30px;
+	font-family: Helvetica;
+	font-size: 16px;
+	padding-left: 20px;
+	border: 0 none;
+}
+
+.tela label
+{
+	color:#999896;
+	font-family: Helvetica;
+	font-size: 13px;
+	color:whitesmoke;
+	width: 50%;
+	margin-right: 10px;
+	padding: 10px;
+
+}
+.tela a
+{
+	color: seashell;
+	font-family: Helvetica;
+	font-size: 13px;
+	color:#999896;
+	width: 50%;
+	padding: 15px;
+	
+	text-decoration:none; 
+
+}
+
+.tela button
+{
+	margin-top: 50px;
+	background-color: #e50914;
+	color: white;
+	font-size: 20px;
+	width: 63%;
+	height: 52px;
+	border-radius: 2%;
+	font-family: Helvetica;
+	border: 0 none;
+}	
+.tela #enter{
+	color: #999896;
+	width: 65%;
+	font-family: Helvetica;
+	font-size: 33px;
+	padding-right: 220px;
+	
+}
+.tela #aqui{
+	color: #999896;
+	font-family: Helvetica;
+	font-size: 14px;
+	margin-left: 9%;
+	text-decoration:none; 
+	
+}
+.tela .link{
+	color: #999896;
+	font-family: Helvetica;
+	font-size: 12px;
+	margin-right: 100px;
+	text-decoration:none; 
+	
+}
+ #box{
+	margin-right:5%;
+	color: #999896 ;
+	background-color: #999896;	
+	padding-right: 12%;
+}
+
+.conectar{
+	background-image: url(facebook.png) ;
+	background-repeat:no-repeat;  
+	background-color: rgb(0,0,0,0.4);
+	box-shadow: 0 0 0 0;
+	border: 0 none;
+	color:#999896;
+	height: 27px;
+	width: 63%;
+	padding-right:60px ;
+
+}
+
+/* Footer */
+
+#footer {
+	margin-top: 100px;
+	padding: 5.8em 0;
+	background: black;
+	background-size: 120%;
+	color: #fff;
+	opacity: 80%;
+}
+
+	
+#footer label {
+		text-align: left;
+		color:#999896;
+		font-size: 12px;
+}
+#footer #contato {
+	font-size: 16px;
+
+}
+#selecao {
+	background-color: rgb(0,0,0,0.4);
+	color: #999896;
+	font-size: 14px;
+	width: 14%;
+	height: 40px;
+	margin-left: 7%;
+	margin-top: 5%;
+	padding-left:30px;
+	background-image: url(icon.png) ;	
+	background-repeat:no-repeat;  
+}
+
+#footer a {
+		text-decoration:none; 
+		padding:7%;
+		color: #999896;
+		font-size: 12px;
+		color
+}
