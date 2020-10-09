@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Slider Jquery</title>
+	<link rel="stylesheet" href="estilo.css">
+	<script src="jquery-3.1.0.min.js"></script>
+
+</head>
+<body>
+
+<div id="pesquisa">
+	<label>Cidade :</label>
+	<input type="text" id="cidade">
+	
+	<input type="button" onclick="procurar()" value="Procurar" id="botao"> 
+
+	</div>
+<br>
+	<div id="dados">
+
+		<label> Temperatura :</label>
+		<input type="text" id ="temp">
+		<br>
+		<label> Humidade :</label>
+		<input type="text" id ="humi">
+		<br>
+		<label> Vento :</label>
+		<input type="text" id ="vento">
+	
+
+	</div>
+
+<script>
+
+function procurar(){
+	var cidade = document.getElementById("cidade").value;
+	var humidade = document.getElementById("humi");
+	var temperatura = document.getElementById("temp");
+	var vento = document.getElementById("vento");
+
+	var ajax = new XMLHttpRequest();
+
+	ajax.open("GET","http://api.openweathermap.org/data/2.5/weather?q="+cidade+"&appid=63fdd93d9a13e20018e653478a84cab3&lang=pt_br&units=metric",true);
+
+	ajax.onreadystatechange = function(){
+	
+		if(ajax.readyState === 4 && ajax.status===200){
+			var retorno = JSON.parse(ajax.responseText);
+
+			temperatura.value = retorno.main.temp + " °C";
+			humidade.value = retorno.main.humidity +" %";
+			vento.value = retorno.wind.speed+" m /s";
+			
+		}
+	}	
+
+	ajax.send();
+}	
+
+</script>
+
+
+</body>
+</html>

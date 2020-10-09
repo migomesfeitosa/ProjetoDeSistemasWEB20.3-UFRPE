@@ -1,0 +1,180 @@
+
+
+
+.camada2{
+
+	background-color: rgb(0,0,0,0.4);
+	background-size: 170%;
+	top: 0;
+	
+}
+
+body{
+
+	background-image: url("fundo.jpg");
+	background-size: 190%;
+	font-family: Helvetica;
+	width: 100%;
+    margin: 0 auto;
+    padding: 0px;
+
+
+}
+
+
+
+
+
+#login
+{
+	background-color: rgb(0,0,0,0.8);
+	width: 45%;
+	height: 550px;
+	margin: 30px 0 0 280px;
+	padding-top: 20px;
+	margin-left: 25%;
+	text-align: center;
+	border-radius: 2px;
+	
+}
+
+.campo
+{
+	width:60%;
+	height: 45px;
+	border-radius: 2%;
+	background-color: #333333;
+	opacity: 100%;
+	margin-top: 30px;
+	font-family: Helvetica;
+	font-size: 16px;
+	padding-left: 20px;
+	border: 0 none;
+}
+
+#login label
+{
+	color:#999896;
+	font-family: Helvetica;
+	font-size: 13px;
+	color:whitesmoke;
+	width: 50%;
+	margin-right: 10px;
+	padding: 10px;
+
+}
+#login a
+{
+	color: seashell;
+	font-family: Helvetica;
+	font-size: 13px;
+	color:#999896;
+	width: 50%;
+	padding: 15px;
+	
+	text-decoration:none; 
+
+}
+
+
+#login button
+{
+	margin-top: 50px;
+	background-color: #e50914;
+	color: white;
+	font-size: 20px;
+	width: 63%;
+	height: 52px;
+	border-radius: 2%;
+	font-family: Helvetica;
+	border: 0 none;
+}	
+
+#login #lembrar
+{
+	margin-right: 15%;
+
+}
+#login #enter{
+	color: #999896;
+	width: 65%;
+	font-family: Helvetica;
+	font-size: 33px;
+	padding-right: 220px;
+	
+}
+#login #clique{
+	color: #999896;
+	font-family: Helvetica;
+	font-size: 14px;
+	margin-left: 9%;
+	text-decoration:none; 
+	
+}
+#login .link{
+	color: #999896;
+	font-family: Helvetica;
+	font-size: 12px;
+	margin-right: 100px;
+	text-decoration:none; 
+	
+}
+ #box{
+	margin-left:3%;
+	color: #999896 ;
+	background-color: #999896;	
+}
+
+.botao{
+	background-image: url(face.png) ;
+	background-repeat:no-repeat;  
+	background-color: rgb(0,0,0,0.4);
+	box-shadow: 0 0 0 0;
+	border: 0 none;
+	color:#999896;
+	height: 27px;
+	width: 63%;
+	padding-right:60px ;
+
+}
+
+.rodape {
+	margin-top: 100px;
+	padding: 5.8em 0;
+	background: black;
+	background-size: 120%;
+	color: #fff;
+	opacity: 80%;
+}
+
+	
+.rodape label {
+		text-align: left;
+		color:#999896;
+		font-size: 12px;
+}
+
+#selecao {
+	background-color: rgb(0,0,0,0.4);
+	color: #999896;
+	font-size: 14px;
+	width: 14%;
+	height: 40px;
+	margin-left: 7%;
+	margin-top: 5%;
+	padding-left:30px;
+	background-image: url(icone.png) ;	
+	background-repeat:no-repeat;  
+}
+
+.rodape a {
+		text-decoration:none; 
+		padding:7%;
+		color: #999896;
+		font-size: 12px;
+		color
+}
+.rodape #contato {
+	font-size: 16px;
+
+}

@@ -1,0 +1,41 @@
+
+
+
+body{
+    background-image: url(https://areademulher.r7.com/wp-content/uploads/2020/01/papel-de-parede-para-celular-mais-de-100-opcoes-para-voce-salvar-85.jpg);
+    background-size: cover;
+    font: bold;
+    font-size: 17px;
+}
+
+	#botao {
+		background-color: rgb(100, 237, 130);
+		color:white !important;
+		border-radius: 10px;
+		font-size: 15px;
+		height: 3.75em;
+		line-height: 3.85em;
+		letter-spacing: 2px;
+		padding: 0 4em;
+		text-align: center;
+    }
+    .titulo{
+
+        color: white;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    
+    input[type="text"], input[type="url"],
+    input[type="password"], input[type="email"]{
+
+        background-color:white ;
+    }
+    
+
+#formulario{
+    background-color: rgb(209, 221, 245);
+    text-align: left;
+    position: relative;
+    opacity: 0.7;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
