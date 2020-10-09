@@ -1,0 +1,122 @@
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Criar conta</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="page-body">
+    <div id="container">
+        <header class="header">
+            <h1>Criar Conta</h1>
+        </header>
+
+        <form action="http://www.atdsistemas.com.br/web/formulario/" id="criar-conta">
+            <fieldset>
+                <legend>Informações Pessoais</legend>
+
+                <div class="input-block">
+                    <label for="">Primeiro Nome</label>
+                    <input type="text" name="nome">
+                </div>
+
+                <div class="input-block">
+                    <label for="">Endereço</label>
+                    <input type="text" name="endereco">
+                </div>
+
+                <div class="div-sexo">
+                    <label for="">Sexo</label>
+                    
+                    <div class="input-radio">
+                        <input type="radio" name="sexo">
+                        <label for="">Masculino</label>
+                    </div>
+
+                    <div class="input-radio">
+                        <input type="radio" name="sexo">
+                        <label for="">Feminino</label>
+                    </div>
+
+                    <div class="input-radio">
+                        <input type="radio" name="sexo">
+                        <label for="">Não Definido</label>
+                    </div>
+                </div>
+
+                <div class="select-block">
+                    <label for="">Nivel de Formação Acadêmica Concluido</label>
+
+                    <select name="formacao">
+                        <option>Nenhuma Formação</option>
+                    </select>
+                </div>
+
+                <div class="photo-block">
+                    <label for="">Foto</label>
+                    <input type="file" name="foto">
+                </div>
+
+                <div class="textarea-block">
+                    <label for="">Quem sou eu?</label>
+                    <textarea name="descricao" cols="100" rows="3"></textarea>
+
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Redes Sociais</legend>
+
+                <div class="input-block">
+                    <label for="">Twitter</label>
+                    <input type="url" name="twitter">
+
+                </div>
+
+                <div class="input-block">
+                    <label for="">Instagram</label>
+                    <input type="url" name="instagram">
+
+                </div>
+
+                <div class="input-block">
+                    <label for="">Facebook</label>
+                    <input type="url" name="facebook">
+
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Informações de Login</legend>
+                <div class="input-block">
+                    <label for="">Email</label>
+                    <input type="email" name="email">
+
+                </div>
+
+                <div class="input-block">
+                    <label for="">Senha</label>
+                    <input type="password" name="senha">
+
+                </div>
+
+                <div class="checkbox-block">
+                    <input type="checkbox" name="lembrar">
+                    <label for="">Lembrar-me</label>              
+
+                </div>
+            </fieldset>
+
+            <footer>
+                <button type="reset" form="criar-conta">Limpar Campos</button>
+                <button type="submit" form="criar-conta">Enviar</button>
+            </footer>
+        </form>
+
+    </div>
+
+</body>
+</html>
