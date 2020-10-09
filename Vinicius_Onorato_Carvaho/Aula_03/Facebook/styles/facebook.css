@@ -1,0 +1,407 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato";
+}
+
+
+.center{
+    max-width: 1100px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+.clear{clear: both;}
+
+header{
+    background: #3b5998;
+    padding: 8px 0;
+
+}
+
+div.logo img{
+    float: left;
+    width: 150px;
+
+}
+/* 
+div.logo{
+    float: left;
+    color: white;
+
+}
+
+/* .logo h2{
+    font-size: 29px;
+    font-weight: normal; */
+
+form.form-login{
+    float: right;
+}
+
+.form-login .form-element{
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.form-element p{
+    color: white;
+    font-size: 14px;
+
+}
+.form-element input[type=email],
+.form-element input[type=password]{
+    margin-top: 4px;
+    border: none;
+}
+
+.form-element input[type=submit]{
+    cursor: pointer;
+    border: 0;
+    background: #4267b2;
+    border: 1px solid #29487d;
+    color: white;
+    padding: 2px 5px;
+}
+
+
+.form-element input[type=submit]:hover{
+    background: #215ab2;
+}
+
+section.main{
+    background: linear-gradient(white,#D3D8E8);
+    padding: 40px 0;
+}
+
+.img-pessoas{
+    float: left;
+    width: 70%;
+
+
+}
+
+.img-pessoas img{
+    max-width: 50%;
+}
+
+.abrir-conta{
+    width: 30%;
+    float: left;
+}
+
+.abrir-conta h2{
+    color: black;
+    font-size: 35px;
+}
+
+;.abrir-conta h3{
+    font-size: 19px;
+    color: rgb(30,30,30);
+    margin-top: 8px;
+    font-weight: normal;
+}
+
+form.criar-conta{
+    margin-top: 10px;
+}
+
+.w50{
+    width: 50%;
+    padding: 0 3px;
+    float: left;
+}
+
+.w100{
+    padding: 0 3px;
+    padding-top: 3px;
+    width: 100%;
+    float: left;
+}
+
+form.criar-conta input{
+    width: 100%;
+}
+
+form.criar-conta input[type=email],
+form.criar-conta input[type=text],
+form.criar-conta input[type=password]{
+    height: 40px;
+    padding-left:  10px;
+    font-size: 20px;
+    border: 1px solid #a5dcff;
+    border-radius: 5px;
+}
+
+form.criar-conta input[type="submit"]{
+    height: 40px;
+    background: linear-gradient(#67ae55,#578843);
+    color: white;
+    cursor: pointer;
+    border: 0;
+    max-width: 200px;
+    font-size: 19px;
+}
+
+form .w100 h2{
+    margin-top: 10px;
+    color: #1d2129;
+    font-size: 19px;
+    font-weight: normal;
+
+}
+
+form select.nascimento{
+    float: left;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.input-radio{
+    margin: 8px 0;
+    float: left;
+    margin: 10px;
+
+}
+
+.input-radio h2{
+    display: inline-block;
+
+}
+
+.input-radio input[type=radio]{
+    width: auto !important;
+    display: inline-block;
+
+}
+
+form #button{
+    border-radius: 4px;
+}
+
+form #genero {
+    margin-top: 6px;
+    color: #1d2129;
+    font-size: 19px;
+    font-weight: normal;
+
+}
+
+section .login-mobile{
+    display: none;
+}
+
+.rodape-direito,.rodape-esquerdo, .rodape-fim{
+    display: none;
+}
+
+
+@media (max-width:768px){
+    
+    .form-element input{
+        display: none;
+    }
+
+    .form-element p{
+        display: none;
+    }
+    
+    .img-pessoas img{
+        display: none;
+
+    }    
+
+    .abrir-conta h2{
+        display: none;
+    }
+
+    .abrir-conta h3{
+        display: none;
+    }
+
+    form.criar-conta input{
+        display: none;
+    }
+
+
+    form select.nascimento{
+        display: none;
+    }
+
+
+    .w100{
+        display: none;
+    }
+
+
+    section.main{
+        background: #D3D8E8;
+        padding: 150px 0;
+        padding-bottom: 40px;
+    }
+
+    div.logo img{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 315px;
+        width: 110px;
+    
+    }
+
+    header{
+        background: #3b5998;
+        padding: 0px;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    
+    }
+
+    section .login-mobile{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    section .login-mobile input[type=email],
+    section .login-mobile input[type=password]{
+        padding: 10px;
+        width: 290px;
+        border: 1px solid darkgray;
+        border-radius: 6px;
+    }
+
+
+    section .login-mobile input[type=email]{
+        margin-top: -140px;
+    }
+
+    section .login-mobile input[type=password]{
+        margin-top: -65px;
+    }
+
+    section .login-mobile input[type=button]{
+        color: ivory;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        background-color:  #3b5998;
+        width: 290px;
+        padding: 7px;
+        border: 0;
+        border-radius: 5px;
+    }
+
+
+    section .login-mobile input[type=submit]{
+        background: #1877f2;
+        color: white;
+        height: 30px;
+        border: 0;
+        margin-top: 21px;
+        border-radius: 4px;
+        padding: 7px;
+        padding-bottom: 20px;
+    }
+    
+    section .login-mobile p{
+        font-size: 12px;
+        color: #7596c8;
+        margin-top: 12px;
+    }
+
+
+    .rodape-direito{
+        margin-top: 24px;
+        margin-left: 56px;
+        font-size: 12px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #576b95;
+        display: grid;
+        text-align: center;
+        float: left;
+    }
+    
+    .rodape-esquerdo{
+        margin-top: 24px;
+        margin-right: 56px ;
+        font-size: 12px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #576b95;
+        display: grid;
+        text-align: center;
+        float: right;
+    }
+
+    .rodape-fim{
+        color: lightslategray;
+        font-size: 12px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 79px;
+        display: grid;
+        margin-left: 325px;
+    }
+
+}
+@media (max-width:425px){
+    
+   
+    div.logo img{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 150px;
+        width: 110px;
+    
+    }
+
+    .rodape-fim{
+        color: lightslategray;
+        font-size: 12px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 79px;
+        display: grid;
+        margin-left: 160px;
+    }
+
+}
+@media (max-width:375px){
+    
+   
+    div.logo img{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 126px;
+        width: 110px;
+    
+    }
+
+    .rodape-fim{
+        color: lightslategray;
+        font-size: 12px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 79px;
+        display: grid;
+        margin-left: 129px;
+    }
+
+}
+
+@media (max-width:320px){
+    
+   
+    div.logo img{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 102px;
+        width: 110px;
+    
+    }
+
+    .rodape-fim{
+        color: lightslategray;
+        font-size: 12px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 79px;
+        display: grid;
+        margin-left: 105px;
+    }
+
+}

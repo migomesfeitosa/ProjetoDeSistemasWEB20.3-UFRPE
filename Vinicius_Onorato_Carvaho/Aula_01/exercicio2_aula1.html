@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Vinicius Carvalho">
+    <title>Aula1</title>
+</head>
+<body>
+    <form action="http://www.atdsistemas.com.br/web/formulario/" method="POST" enctype="multipart/form-data">
+        <div>
+
+            <h1><b>Criar Conta</b></h1>
+            <fieldset>
+                <legend>Informaçoes Pessoais</legend>
+                <label for="nome">Primeiro Nome:</label>
+                <input type="text" name="nome">
+                <br>
+                <br>
+                <label for="foto">Foto:</label>
+                <input type="file" name="foto">
+                <br>
+                <br>
+                <label for="endereco">Endereço:</label>
+                <input type="text" name="endereco">
+                <br>
+                <br>
+                <label for="sexo">Sexo</label><br>
+                <input type="radio" name="sexo" value="masculino" id="masc">Mascunino <br>
+                <input type="radio" name="sexo" value="feminino" id="fem">Feminino <br>
+                <input type="radio" name="sexo" value="Nao definido" id="nao_def">Não Definido <br>
+                <br>
+                <label for="formacao"> Nivel de Formação Acadêmica Concluido</label>
+                <select name="formacao">
+                    <option value="Nao definido">Nao definido</option>
+                    <option value="Ensino Medio">Ensino Medio</option>
+                    <option value="Ensino Superior">Ensino Superior</option>
+                </select>
+                <br>
+                <br>
+                <label for="descricao"></label>Quem sou eu?<br>
+                <textarea name="descricao" id="descricao" cols="70" rows="2"></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Redes Sociais</legend>
+
+                <label for="twitter">Twitter:</label>
+                <input type="text" name="twitter">
+                <br>
+                <br>
+                <label for="instagram">Instagram:</label>
+                <input type="text" name="instagram">
+                <br>
+                <br>
+                <label for="facebook">Facebook:</label>
+                <input type="text" name="facebook">
+
+            </fieldset>
+            <fieldset>
+                <legend>Informações de Login</legend>
+
+                <label for="email">Email:</label>
+                <input type="email" name="email">
+                <br>
+                <br>
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha">
+                <br>
+                <br>
+                <input type="checkbox" name="lembrar">
+                <label for="lembrar">Lembrar-me</label>
+            </fieldset>
+            <br>
+            <input type="reset" value="Limpar Campos">
+            <input type="submit" value="Enviar">
+        </div>
+
+
+    </form>
+</body>
+</html>

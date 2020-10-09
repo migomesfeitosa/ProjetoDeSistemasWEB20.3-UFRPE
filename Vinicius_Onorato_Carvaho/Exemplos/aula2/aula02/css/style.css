@@ -1,0 +1,86 @@
+/* p {
+    background-color: blue;
+    font-size: 15px;
+} */
+
+
+/* button {
+    border-radius: 100px;
+    width: 300px;
+    height: 200px;
+    background-color: red;
+} */
+
+
+/* body {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/6/66/Serra_Talhada%2CPernambuco_-_Brasil.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+} */
+
+p {
+    text-align: justify;
+    line-height: 30px;
+    /* border-style: solid;
+    border-width: 2px;
+    border-color: red; */
+    border: solid 2px blue;
+}
+
+#parag-com-id {
+    font-size: 100px;
+    font-weight: bold;
+    color: coral;
+    font-family: 'Pacifico', cursive;
+    letter-spacing: 100px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#parag-com-id-dois {
+    font-size: 100px;
+    font-weight: ;
+    color: coral;
+    font-family: 'Raleway', sans-serif;
+}
+
+.font-green {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.font-red {
+    font-size: 30px;
+    color: red
+}
+
+.background-black {
+    background-color: black;
+}
+
+a {
+    color: red;
+    font-size: 50px;
+}
+
+a:hover {
+    color: green;
+    font-size: 100px;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/6/66/Serra_Talhada%2CPernambuco_-_Brasil.jpg");
+}
+
+a:visited {
+    color: blue;
+    font-size: 30px;
+}
+
+img {
+    src: url("https://i1.wp.com/jornaldesafio.com.br/site/wp-content/uploads/2019/05/Serra-Talhada-comemora-168-anos-de-emancipa%C3%A7%C3%A3o-pol%C3%ADtica.jpg?ssl=1");
+    /* src: ; */
+    width: 300px;
+}
+
+img:hover {
+    src: url("https://upload.wikimedia.org/wikipedia/commons/6/66/Serra_Talhada%2CPernambuco_-_Brasil.jpg");
+    width: 300px;
+}
