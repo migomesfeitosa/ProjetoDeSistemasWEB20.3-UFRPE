@@ -1,0 +1,111 @@
+.cadastrar{
+    display: none;
+}
+
+.cabecalho{
+    text-align: center;
+    height: 90px;
+}
+
+.login-div{
+    position:relative; 
+    top: 10px;
+    width: 100%;
+    margin: auto;
+}
+
+.email-div, .senha-div{
+    display: block;
+    margin-right: 0px;
+}
+
+.email-texto, .senha-texto{
+    visibility: hidden;
+}
+
+.entrar{
+    display: block;
+    margin: auto;
+    width: 95%;
+    height: 40px;
+}
+
+.email, .senha{
+    box-sizing: border-box;
+    width: 95%;
+    height: 40px;
+    outline: none;
+    border: 1px solid gray;
+}
+
+.email::placeholder{
+    visibility: visible;
+}
+
+.senha::placeholder{
+    visibility: visible;
+}
+
+.aplicativo{
+    display: block;
+    color: #3b5998;
+    background-color: lightyellow;
+    border: yellow solid 1px;
+    height: 40px;
+    text-align: center;
+    margin:auto;
+    width: 95%;
+}
+
+.nova-conta{
+    background-color: rgb(86, 139, 230);
+    border: none;
+    height: 40px;
+    border-radius: 3px;
+    margin: auto;
+    margin-top: 60px;
+    display: block;
+    width: 40%;
+}
+
+.esquecer{
+    display: inline-block;
+    margin-top: 8px;
+    margin-bottom: 60px;
+}
+
+.central{
+    display: inline-block;
+    margin-top: 8px;
+    margin-bottom: 60px;
+}
+
+.idiomas{
+    display: block;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.esquerda{
+    float: left;
+    margin-left: 90px;
+}
+
+.direita{
+    float: right;
+    margin-right: 90px;
+}
+
+.idioma{
+    display: block;
+}
+
+.corp{
+    display: block;
+    margin-top: 200px;
+    color: gray;
+}
+
+.vazio{
+    display: none;
+}

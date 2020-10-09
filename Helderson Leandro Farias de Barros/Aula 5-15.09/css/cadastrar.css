@@ -1,0 +1,63 @@
+body{
+    background-color: #003153;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+
+.login-div{
+    margin: auto;
+    width: 40%;
+    padding: 10px 0px;
+    background-color: white;
+}
+
+.elemento{
+    display: block;
+    margin: 25px auto;
+    width: 80%;
+    height: 30px;
+}
+
+.label-estado{
+    margin-left: 9%;
+}
+
+.estado{
+    display: block;
+    margin: 25px auto;
+    width: 82%;
+    height: 30px;
+}
+
+.nomes{
+    margin: auto;
+    width: 82%;
+}
+
+.nome{
+    height: 30px;
+    width: 45%;
+}
+
+.sobrenome{
+    float: right;
+    height: 30px;
+    width: 45%;
+}
+
+.sexo{
+    margin: auto;
+    width: 80%;
+}
+
+h1{
+    text-align: center;
+}
+
+button{
+    background-color: #003153;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    height: 30px;
+}

@@ -1,0 +1,88 @@
+.page{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+fieldset{
+    background-color: rgba(23,24,28,0.8);
+}
+
+body{
+    background-image: url(https://wallpaperaccess.com/full/123081.jpg);
+    background-size: cover;
+    color: lightgray;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+input, textarea{
+    background-color: #2a272b;
+    color: white;
+    font-size: 16px;
+    border: 1px solid gray;
+    height: 25px;
+    outline: none;
+}
+
+textarea{
+    columns: 110;
+    height: 50px;
+}
+
+h1{
+    color: lightgrey;
+    padding-left: 30px;
+}
+
+button{
+    border: 1px solid gray;
+    color: black;
+    outline: none;
+    background-color: white;
+    border-radius: 5px;
+}
+
+button:active{
+    background-color: gray;
+    color: white;
+    border: 1px solid gray;
+}
+
+button:hover{
+    color: gray;
+}
+
+button:hover:active{
+    color: white;
+}
+
+.limpar{
+    height: 30px;
+    width: 130px;
+}
+
+.enviar{
+    height: 30px;
+    width: 100px;
+}
+
+.fileInput{
+    cursor: pointer;
+}
+
+.fileInput::-webkit-file-upload-button{
+    height: 100%;
+}
+
+select{
+    outline: none;
+}
+
+legend{
+    font-size: 20px;
+}
+
+label{
+    font-size: 17px;
+}
+

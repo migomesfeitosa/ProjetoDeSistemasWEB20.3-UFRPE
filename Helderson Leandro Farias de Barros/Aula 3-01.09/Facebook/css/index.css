@@ -1,0 +1,203 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.cabecalho{
+    background-color: #3b5998;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+input{
+    box-sizing: border-box;
+    outline: hidden;
+}
+
+.login-div{
+    float: right;
+    display: inline-block;
+    margin: 5px 125px;
+    color: white;
+}
+
+.logo{
+    display: inline-block;
+    color: white;
+    text-align: right;
+    margin: 20px 120px ;
+}
+
+.email-div{
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.senha-div{
+    display: inline-block;
+    color: white;
+}
+
+.esquecer, .central{
+    display: block;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: #ADB9D3;
+    text-decoration: none;
+}
+
+.entrar{
+    display: inline-block;
+    background-color:rgb(52, 81, 140);
+    border: 1px solid rgb(35, 57, 99);
+}
+
+.cadastrar{
+    width: 100%;
+    overflow: hidden;
+}
+
+.cadastrar-div{
+    float: right;
+    margin-right: 200px;
+}
+
+.logo-div{
+    display: inline-block;
+    margin-left: 30px;
+    margin-top: 40px;
+}
+
+.campo{
+    display: block;
+    height: 40px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    border: 1px bold #D4D8E8;
+    box-sizing:border-box;
+}
+
+.nome{
+    display: inline-block;
+}
+
+.completo{
+    width: 99%;
+}
+
+.aniversario-div{
+    width: 75%;
+    margin-bottom: 13px;
+}
+
+select{
+    font-size: 15px;
+    height: 30px;
+    width: 60px;
+}
+
+.sexo{
+    font-size: 20px;
+    margin-bottom: 13px;
+}
+
+button{
+    color: white;
+    margin-right: 5px;
+    margin-left: 5px;
+    
+}
+
+img{
+    width: 600px
+}
+
+.informar{
+    text-align: justify;
+}
+
+.login-email{
+    display: inline-block;
+}
+
+.login-senha{
+    display: inline-block;
+}
+
+.abra{
+    font-weight: 600;
+    color: rgb(55,51,51);
+}
+
+.inscreva{
+    background-color: rgb(94, 154, 75);
+    width: 200px;
+    height: 45px;
+    font-size: 25px;
+    border-radius: 5px;
+    margin: 15px 0px 0px 0px;
+}
+
+.facebook-logo{
+    width: 200px;
+
+}
+
+.genero{
+    display: block;
+}
+.data{
+    display: block;
+}
+
+.email::placeholder{
+    visibility: hidden;
+}
+
+.senha::placeholder{
+    visibility: hidden;
+}
+
+.idiomas, .aplicativo, .corp, .central, .nova-conta{
+    display: none;
+}
+
+.idiomas a, .central{
+    text-decoration: none;
+}
+
+.selecionado{
+    color: gray;
+}
+
+.link-idioma{
+    color: #3b5998;
+}
+
+.logo-texto{
+    display: inline-block;
+    color: #3b5998;
+    font-size: 20px;
+}
+
+.mapa, .email-texto, .senha-texto{
+    display: block;
+}
+
+.vazio{
+    display: block;
+    visibility: hidden;
+    color: #3b5998
+}
+
+.form-cadastrar{
+    display: inline-block;
+    float: right;
+}
+
+.link-termo{
+    text-decoration: none;
+}

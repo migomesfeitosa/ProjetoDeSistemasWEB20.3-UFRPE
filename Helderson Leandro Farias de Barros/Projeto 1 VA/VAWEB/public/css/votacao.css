@@ -1,0 +1,56 @@
+body{
+    font-size: 20px;
+}
+
+.vote-div{
+    display: inline-block;
+    width: 40%;
+    margin-left: 5%;
+    margin-top: 200px;
+    padding: 50px;
+}
+
+.user-div{
+    margin-bottom: 7px;
+}
+
+.question{
+    margin-bottom: 4px;
+}
+
+.description{
+    margin-top: 10px;
+    color: gray;
+}
+
+progress{
+    display:none;
+    -webkit-appearance: none;
+    width: 30%;
+    appearance: none;
+    padding: 5px;
+    height: 30px;
+}
+
+progress::-webkit-progress-bar{
+    background-color: #eee;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+progress::-webkit-progress-value{
+    background-color: #003153;
+}
+
+.enquetes-relacionadas{
+    margin-top: 165px;
+    width: 30%;
+    display: inline-block;
+    float: right;
+}
+
+.enquete-link{
+    display: block;
+    text-decoration: none;
+    color: #003153;
+}

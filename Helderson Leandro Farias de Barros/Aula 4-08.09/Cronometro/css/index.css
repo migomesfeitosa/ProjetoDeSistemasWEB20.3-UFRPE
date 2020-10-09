@@ -1,0 +1,65 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    color: white;
+}
+
+.main{
+    margin: auto;
+    width: 40%;
+    height: 370px;
+    text-align: center;
+    color: black;
+    margin-top: 120px;
+    padding: 20px;
+
+}
+
+.contador{
+    background-color: white;
+    border-radius: 5px;
+    margin: 20px 50px 50px 50px;
+}
+label{
+    display: block;
+    font-size: 18px;
+    color: white;
+}
+
+input{
+    display: block;
+    margin: auto;
+}
+
+.time-div{
+    display: inline-block;
+    margin: 10px;
+}
+
+
+h1{
+    display: inline-block;
+    background-color: white;
+}
+
+h2{
+    margin-top: 10px;
+    font-size: medium;
+}
+
+input{
+    outline:none;
+    height: 30px;
+    width: 40%;
+}
+
+button{
+    background-color: forestgreen;
+    color: white;
+    width: 30%;
+    height: 50px;
+    font-size: medium;
+    border: none;
+    outline: none;
+    margin-top: 15px;
+}

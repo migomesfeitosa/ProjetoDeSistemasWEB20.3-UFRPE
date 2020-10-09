@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercício</title>
+</head>
+<body>
+	<h1>Criar Conta</h1>
+	<form action="http://www.atdsistemas.com.br/web/formulario/" enctype="multipart/form-data" method="POST">
+		<fieldset>
+		<legend>Informações Pessoais</legend>
+		<label for="nome">Primeiro Nome:</label>
+		<input type="text" name="nome" id="nome">
+		<br>
+		<br>
+		<label for="foto">Foto: </label>
+		<input type="file" name="foto" id="foto">
+		<br>
+		<br>
+		<label for="endereco">Endereço: </label>
+		<input type="text" name="endereco" id="endereco"><br>
+		<br>
+		<label>Sexo</label><br>
+		<input type="radio" name="sexo" value="masculino" id="masculino">
+		<label for="masculino">Masculino</label><br>
+		<input type="radio" name="sexo" value="feminino" id="feminino">
+		<label for="feminino">Feminino</label><br>
+		<input type="radio" name="sexo" value="indefinido" id="indefinido">
+		<label for="indefinido">Não definido</label>
+		<p>Nível de Formação Acadêmica Concluído
+		<select name=formacao>
+			<option value="nenhuma">Nenhuma Formação</option>
+		</select>
+		</p>
+		<label for="descricao">Quem sou eu?</label><br>
+		<textarea cols="110" name="descricao" id="descricao"></textarea><br>
+		</fieldset>
+		<fieldset>
+		<legend>Redes Sociais</legend>
+		<label for="twitter">Twitter:</label>
+		<input type="text" name="twitter" id="twitter"><br>
+		<br>
+		<label for="instagram">Instagram:</label>
+		<input type="text" name="instagram" id="instagram"><br>
+		<br>
+		<label for="facebook">Facebook:</label>
+		<input type="text" name="facebook" id="facebook"><br>
+		</fieldset>
+		<fieldset>
+			<legend>Informações de Login</legend>
+			<label for="email">Email: </label>
+			<input type="email" name="email" id="email"><br>
+			<br>
+			<label for="senha">Senha: </label>
+			<input type="password" name="senha" id="senha"><br>
+			<br>
+			<input type="checkbox" name="lembrar" id="lembrar">
+			<label for="lembrar">Lembre-me</label>
+		</fieldset>
+		<br>
+		<button type="reset">Limpar Campos</button>
+		<button>Enviar</button>
+	</form>
+</body>
+</html>
